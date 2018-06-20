@@ -4,14 +4,23 @@
   "private": true,
   "dependencies": {
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
     "react": "^16.4.1",
+    "react-app-rewire-eslint": "^0.2.3",
+    "react-app-rewired": "^1.5.2",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject",
+    "doc:dev": "docz dev",
+    "doc:buid": "docz build"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.5",
+    "prettierrc": "^0.0.0-5"
   }
 }
