@@ -5,6 +5,7 @@
   "dependencies": {
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-app-rewire-eslint": "^0.2.3",
     "react-app-rewired": "^1.5.2",
