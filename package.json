@@ -6,5 +6,8 @@
 	"scripts": {
 		"docz:dev": "docz dev",
 		"docz:build": "docz build"
+	},
+	"dependencies": {
+		"prop-types": "^15.6.2"
 	}
 }

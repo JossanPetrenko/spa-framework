@@ -1,3 +1,29 @@
-$primary-color: red !default;
-$primary-font: Lato;
+//--- named colors
+$color-primary: #2185d0 !default;
+$color-secondary: #f2711b !default;
+$color-accent: #24ba45 !default;
+$color-success: #24ba45 !default;
 
+
+$color-primary-dark: darker($color-primary, 15%);
+$color-secondary-dark: darker($color-secondary, 15%);
+$color-accent-dark: darker($color-accent, 15%);
+$color-success-dark:  darker($color-success, 15%);
+
+$color-primary-dark: darker($color-primary, 15%);
+$color-secondary-dark: darker($color-secondary, 15%);
+$color-accent-dark: darker($color-accent, 15%);
+$color-success-dark:  darker($color-success, 15%);
+
+
+$color-font-primary-dark: choose-font-color($color-primary-dark) !default;
+$color-font-primary: choose-font-color($color-primary) !default;
+$color-font-primary-light: choose-font-color($color-primary-light) !default;
+
+$color-font-secondary-dark: choose-font-color($color-secondary-dark) !default;
+$color-font-secondary: choose-font-color($color-secondary) !default;
+$color-font-secondary-light: choose-font-color($color-secondary-light) !default;
+
+$color-font-accent-dark: choose-font-color($color-accent-dark) !default;
+$color-font-accent: choose-font-color($color-accent) !default;
+$color-font-accent-light: choose-font-color($color-accent-light) !default;
