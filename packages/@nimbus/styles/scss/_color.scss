@@ -5,15 +5,15 @@ $color-accent: #24ba45 !default;
 $color-success: #24ba45 !default;
 
 
-$color-primary-dark: darker($color-primary, 15%);
-$color-secondary-dark: darker($color-secondary, 15%);
-$color-accent-dark: darker($color-accent, 15%);
-$color-success-dark:  darker($color-success, 15%);
+$color-primary-dark: darken($color-primary, 15%);
+$color-secondary-dark: darken($color-secondary, 15%);
+$color-accent-dark: darken($color-accent, 15%);
+$color-success-dark:  darken($color-success, 15%);
 
-$color-primary-dark: darker($color-primary, 15%);
-$color-secondary-dark: darker($color-secondary, 15%);
-$color-accent-dark: darker($color-accent, 15%);
-$color-success-dark:  darker($color-success, 15%);
+$color-primary-light: lighten($color-primary, 15%);
+$color-secondary-light: lighten($color-secondary, 15%);
+$color-accent-light: lighten($color-accent, 15%);
+$color-success-light:  lighten($color-success, 15%);
 
 
 $color-font-primary-dark: choose-font-color($color-primary-dark) !default;

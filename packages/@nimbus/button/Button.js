@@ -1,14 +1,40 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Button() {
-	return <button> Simple </button>;
+export default class Button extends React.PureComponent {
+  render () {
+    const {onClick, children, primary} = this.props;
+
+    const classList = ['n-btn'];
+
+    if (primary) {
+      classList.push ('n-btn-primary');
+    }
+
+    return (
+      <button className={classList.join (' ')} onClick={onClick}>
+        {children}
+      </button>
+    );
+  }
 }
 
 Button.propTypes = {
-	content: PropTypes.oneOf([ PropTypes.string, PropTypes.element, PropTypes.node ])
+  /** Conteudo do botão */
+  content: PropTypes.oneOfType ([
+    PropTypes.string,
+    PropTypes.element,
+    PropTypes.node,
+  ]),
+
+  /** Evento de click, disparado ao clicar no botão.  */
+  onClick: PropTypes.func,
+
+  /** Estilo primario */
+  primary: PropTypes.bool,
 };
 
 Button.defaultProps = {
-  content: "oi"
-}
+  content: ' ',
+  primary: false,
+};
