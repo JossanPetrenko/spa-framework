@@ -33,15 +33,14 @@ Button.propTypes = {
   /** Evento clicar, dispara a função onClick */
   onClick: PropTypes.func,
 
-  /** Estilo primário*/
+  /** Estilo botão primário*/
   primary: PropTypes.bool,
 
-  /** Estilo pequeno*/
+  /** Estilo botão pequeno*/
   small: PropTypes.bool,
 };
 
 Button.defaultProps = {
-  content: ' ',
   primary: false,
   small: false,
 };
