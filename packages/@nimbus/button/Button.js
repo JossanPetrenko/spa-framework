@@ -3,12 +3,15 @@ import PropTypes from 'prop-types';
 
 export default class Button extends React.PureComponent {
   render () {
-    const {onClick, children, primary} = this.props;
+    const {onClick, children, primary, small} = this.props;
 
     const classList = ['n-btn'];
 
     if (primary) {
       classList.push ('n-btn-primary');
+    }
+    if (small) {
+      classList.push ('n-btn-small');
     }
 
     return (
@@ -27,14 +30,18 @@ Button.propTypes = {
     PropTypes.node,
   ]),
 
-  /** Evento de click, disparado ao clicar no botão.  */
+  /** Evento clicar, dispara a função onClick */
   onClick: PropTypes.func,
 
-  /** Estilo primario */
+  /** Estilo primário*/
   primary: PropTypes.bool,
+
+  /** Estilo pequeno*/
+  small: PropTypes.bool,
 };
 
 Button.defaultProps = {
   content: ' ',
   primary: false,
+  small: false,
 };

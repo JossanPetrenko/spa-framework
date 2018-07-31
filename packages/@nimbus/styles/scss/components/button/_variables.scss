@@ -1,4 +1,6 @@
-$btn-padding: 0.8rem !default;
-$btn-border: 0.06rem solid black !default;
-$btn-border-radius: 0.4rem !default;
-$btn-content: 1rem !default;
+$btn-padding: $padding !default;
+$btn-padding-small: $padding-small !default;
+$btn-border: $border-small solid $color-primary !default;
+$btn-border-radius: $border-radius !default;
+$btn-content: $content !default;
+$btn-border-primary: $border-small solid $color-accent !default;
