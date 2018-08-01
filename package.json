@@ -1,14 +1,30 @@
 {
+	"name": "Nimbus",
+	"jest": {
+		"verbose": true
+	},
 	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-jest": "^23.4.2",
 		"docz": "latest",
 		"docz-plugin-css": "^0.8.0",
-		"lerna": "^2.11.0"
+		"jest": "^23.4.2",
+		"lerna": "^2.11.0",
+		"regenerator-runtime": "^0.12.0"
 	},
 	"scripts": {
+		"docz:build": "docz build",
 		"docz:dev": "docz dev",
-		"docz:build": "docz build"
+		"test": "jest"
 	},
 	"dependencies": {
-		"prop-types": "^15.6.2"
+		"babel": "^6.23.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"chai": "^4.1.2",
+		"enzyme": "^3.3.0",
+		"enzyme-adapter-react-16": "^1.1.1",
+		"prop-types": "^15.6.2",
+		"sinon": "^6.1.4"
 	}
 }
