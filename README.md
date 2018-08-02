@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-start vervaccio
+start verdaccio
 ```
 verdaccio
 ```
