@@ -79,9 +79,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Jossan Petrenko** - *Initial work* - [Nimbus](https://github.com/JossanPetrenko/spa-framework/)
+* **Jossan Petrenko** - *Trabalho inicial* - [Nimbus](https://github.com/JossanPetrenko/spa-framework/)
 
-See also the list of [contributors](https://github.com/JossanPetrenko/spa-framework/contributors) who participated in this project.
+Veja também a lista de  [colaboradores](https://github.com/JossanPetrenko/spa-framework/contributors) que participaram deste projeto.
 
 ## License
 
