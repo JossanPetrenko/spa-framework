@@ -92,5 +92,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-Agredecimento a todas pessoas envolvidas no projeto. 
-Em homenagem a Wesley Teixeira o "Brodinho'.
+>Agredecimento a todas pessoas envolvidas no projeto. 
+>>Em homenagem a Wesley Teixeira o "Brodinho'.
