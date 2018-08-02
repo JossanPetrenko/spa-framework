@@ -79,7 +79,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Jossan Petrenko** - *Initial work* - [Nimbus](https://github.com/JossanPetrenko/spa-framework/)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
