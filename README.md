@@ -1,6 +1,6 @@
-# Nimbus - SPA framework
+# Nimbus
 
-One Paragraph of project description goes here
+É um framework para gerar aplicações SPA (Single Page Application).
 
 ## Getting Started
 
