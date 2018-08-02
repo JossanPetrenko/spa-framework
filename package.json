@@ -4,6 +4,7 @@
 		"verbose": true
 	},
 	"devDependencies": {
+		"babel": "^6.23.0",
 		"babel-core": "^6.26.3",
 		"babel-jest": "^23.4.2",
 		"babel-preset-env": "^1.7.0",
@@ -15,14 +16,14 @@
 		"enzyme-adapter-react-16": "^1.1.1",
 		"jest": "^23.4.2",
 		"lerna": "^2.11.0",
-		"sinon": "^6.1.4",
-    "babel": "^6.23.0",
-    "regenerator-runtime": "^0.12.0"
+		"regenerator-runtime": "^0.12.0",
+		"sinon": "^6.1.4"
 	},
 	"scripts": {
 		"docz:build": "docz build",
 		"docz:dev": "docz dev",
-		"test": "jest"
+		"test": "jest",
+		"bootstrap": "npm i -g verdaccio"
 	},
 	"dependencies": {
 		"prop-types": "^15.6.2"
