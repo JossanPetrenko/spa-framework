@@ -1,15 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> should render a grayish label 1`] = `
+exports[`<Button /> deve renderizar o botão padrão 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
-    light={true}
+    disabled={false}
+    outlined={false}
     primary={false}
+    secundary={false}
     small={false}
   >
-    Hello Jest!!
+    Padrão
   </Button>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -23,12 +25,12 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Hello Jest!!",
+      "children": "Padrão",
       "className": "n-btn",
       "onClick": undefined,
     },
     "ref": null,
-    "rendered": "Hello Jest!!",
+    "rendered": "Padrão",
     "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -37,12 +39,12 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Hello Jest!!",
+        "children": "Padrão",
         "className": "n-btn",
         "onClick": undefined,
       },
       "ref": null,
-      "rendered": "Hello Jest!!",
+      "rendered": "Padrão",
       "type": "button",
     },
   ],
@@ -56,15 +58,18 @@ ShallowWrapper {
 }
 `;
 
-exports[`<Button /> should render a label 1`] = `
+exports[`<Button /> deve renderizar o botão primario 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
-    primary={false}
+    disabled={false}
+    outlined={false}
+    primary={true}
+    secundary={false}
     small={false}
   >
-    Hello Jest!!!!!!
+    primário
   </Button>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -78,12 +83,12 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Hello Jest!!!!!!",
-      "className": "n-btn",
+      "children": "primário",
+      "className": "n-btn n-btn-primary",
       "onClick": undefined,
     },
     "ref": null,
-    "rendered": "Hello Jest!!!!!!",
+    "rendered": "primário",
     "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -92,67 +97,12 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Hello Jest!!!!!!",
-        "className": "n-btn",
+        "children": "primário",
+        "className": "n-btn n-btn-primary",
         "onClick": undefined,
       },
       "ref": null,
-      "rendered": "Hello Jest!!!!!!",
-      "type": "button",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
-exports[`<Button /> should render a small label 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Button
-    primary={false}
-    small={true}
-  >
-    Hello Jest!!!
-  </Button>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": "Hello Jest!!!",
-      "className": "n-btn n-btn-small",
-      "onClick": undefined,
-    },
-    "ref": null,
-    "rendered": "Hello Jest!!!",
-    "type": "button",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "Hello Jest!!!",
-        "className": "n-btn n-btn-small",
-        "onClick": undefined,
-      },
-      "ref": null,
-      "rendered": "Hello Jest!!!",
+      "rendered": "primário",
       "type": "button",
     },
   ],

@@ -1,15 +1,17 @@
 @import './variables.scss';
 
 .n-btn {
-  border-radius: $btn-border-radius;
-  border: $btn-border;
   font-size: $btn-content;
   padding: $btn-padding;
+  border-radius: $btn-border-radius;
+  background: $color-default;
+  border: $btn-border;
 }
 .n-btn-primary {
-  border: $btn-border-primary;
+  //border: $btn-border-primary;
+  // background: $color-primary;
 }
 
-.n-btn-small{
-  padding: $btn-padding-small;
+.n-btn-small {
+  // padding: $btn-padding;
 }
