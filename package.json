@@ -29,6 +29,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "node-polyglot": "^2.3.0",
     "prop-types": "^15.6.2"
   },
   "jest": {

@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 export default class Button extends React.PureComponent {
   render () {
-    const {onClick, children, primary, small} = this.props;
+    const { onClick, children, primary, small } = this.props;
 
     const classList = ['n-btn'];
 

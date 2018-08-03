@@ -2,7 +2,8 @@
 name: nimbus/button
 ---
 
-import '../styles/scss/theme.scss'
+import '../styles/scss/theme.scss';
+import {t} from '../strings/index.js';
 
 # **Button**
 
@@ -18,7 +19,7 @@ import Button from './index';
 ### Simple
 
 <Playground  >
-  <Button>Simple Button</Button>
-  <Button small>Small Button</Button>
-  <Button primary>Primary Button</Button>
+  <Button>{t('common.padrao')}</Button>
+  <Button primary>{t('common.primario')}</Button>
+  <Button small>{t('common.secundario')}</Button>
 </Playground>
