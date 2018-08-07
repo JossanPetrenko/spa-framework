@@ -1,4 +1,10 @@
-$btn-border-radius: $border-radius !default;
-$btn-border: $border solid $color-primary !default;
-$btn-content: $content !default;
+//default
+$btn-border-radius: $border-radius-md !default;
+$btn-border: $border-md solid $color-border !default;
+$btn-content: $content-md !default;
 $btn-padding: $padding-md $padding-xl !default;
+
+//primary
+$btn-border-primary: $border-md solid $color-primary !default;
+
+//secondary

@@ -4,12 +4,15 @@ import PropTypes from 'prop-types';
 
 export default class Button extends React.PureComponent {
   render () {
-    const { onClick, children, primary, secundary, small, disabled, outlined, } = this.props;
+    const { onClick, children, primary, secundary, sm, disabled, outlined, } = this.props;
 
     const classList = ['n-btn'];
 
     if (primary) {
-      classList.push ('n-btn-primary');
+      classList.push ('n-btn-primary btn-6');
+    }
+    if (disabled) {
+      classList.push ('n-btn-disabled');
     }
     if (secundary) {
       classList.push ('n-btn-secundary');
@@ -17,16 +20,13 @@ export default class Button extends React.PureComponent {
     if (outlined) {
       classList.push ('n-btn-outlined');
     }
-    if (disabled) {
-      classList.push ('n-btn-disabled');
-    }
-    if (small) {
-      classList.push ('n-btn-small');
+    if (sm) {
+      classList.push ('n-btn-sm');
     }
 
 
     return (
-      <button className={classList.join (' ')} onClick={onClick}>
+      <button className={classList.join (' ')} onClick={onClick} disabled={disabled}>
         {children}
       </button>
     );

@@ -13,6 +13,15 @@ describe('<Button />', () => {
         <Button>{t('common.padrao')}</Button>
     );
     expect(wrapper).to.matchSnapshot();
+    expect(wrapper.text()).to.contain(t('common.padrao'));
+  });
+
+  it('deve renderizar o botão desabilitado', () => {
+    const wrapper = shallow(
+        <Button disabled>{t('common.desabilitado')}</Button>
+    );
+    expect(wrapper).to.matchSnapshot();
+    expect(wrapper.text()).to.contain(t('common.desabilitado'));
   });
 
   it('deve renderizar o botão primario', () => {
@@ -20,11 +29,7 @@ describe('<Button />', () => {
         <Button primary>{t('common.primario')}</Button>
     );
     expect(wrapper).to.matchSnapshot();
+    expect(wrapper.text()).to.contain(t('common.primario'));
   });
-
-  // it('Renderiza o conteúdo', () => {
-  //   const wrapper = render(<Button> Texto Simples </Button>);
-  //   expect(wrapper.text()).to.contain(' Texto Simples ');
-  // });
 
 });

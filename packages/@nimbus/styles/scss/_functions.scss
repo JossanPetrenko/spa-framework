@@ -1,5 +1,4 @@
 @function choose-font-color($color, $dark: #000, $light: #FFF) {
   // return $dark or $light color depending on lightness of $color
   @return if(lightness($color) > 50, $dark, $light);
-
 }

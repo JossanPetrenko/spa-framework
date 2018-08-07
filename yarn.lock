@@ -8806,6 +8806,13 @@ react-feather@^1.1.1:
   version "1.1.1"
   resolved "http://localhost:4873/react-feather/-/react-feather-1.1.1.tgz#dd59143af457601e68f2cd3bf32c0d94d30f89e7"
 
+react-grid-system@^4.1.4:
+  version "4.1.4"
+  resolved "http://localhost:4873/react-grid-system/-/react-grid-system-4.1.4.tgz#cf363f1780775e570cbd2552e0a0b440065c2457"
+  dependencies:
+    lodash "^4.17.10"
+    prop-types "^15.6.1"
+
 react-hot-loader@4.3.3:
   version "4.3.3"
   resolved "http://localhost:4873/react-hot-loader/-/react-hot-loader-4.3.3.tgz#37409a3341c7787563d0972007ba02521f82f5d5"

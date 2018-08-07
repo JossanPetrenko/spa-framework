@@ -4,6 +4,7 @@ name: nimbus/button
 
 import '../styles/scss/theme.scss';
 import {t} from '../strings/index.js';
+import { Row,Col } from 'react-grid-system';
 
 # **Button**
 
@@ -16,10 +17,21 @@ import Button from './index';
 ## Types
 
 
-### Simple
+### Exemplos
 
 <Playground  >
-  <Button>{t('common.button')}</Button>
-  {/* <Button primary>{t('common.primario')}</Button>
-  <Button small>{t('common.secundario')}</Button> */}
+  <Row>
+    <Col md={3}>
+      <Button>{t('common.padrao')}</Button>
+    </Col>
+    <Col md={3}>
+    <Button disabled>{t('common.desabilitado')}</Button>
+    </Col>
+      <Col md={3}>
+    <Button primary>{t('common.primario')}</Button>
+    </Col>
+      <Col md={3}>
+    <Button primary disabled>{t('common.primario')}</Button>
+    </Col>
+  </Row>
 </Playground>

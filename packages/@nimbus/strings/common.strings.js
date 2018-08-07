@@ -6,8 +6,9 @@ export default extend({
     common: {
         //keep alphabetical order
         'button': 'BUTTON',
+        'desabilitado': 'Desabilitado',
         'padrao': 'Padrão',
-        'primario': 'primário',
+        'primario': 'Primário',
         'secundario': 'Secundário',
     }
 });

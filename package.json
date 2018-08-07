@@ -30,7 +30,8 @@
   },
   "dependencies": {
     "node-polyglot": "^2.3.0",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.6.2",
+    "react-grid-system": "^4.1.4"
   },
   "jest": {
     "setupFiles": [

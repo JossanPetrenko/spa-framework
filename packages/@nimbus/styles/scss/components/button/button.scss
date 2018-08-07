@@ -1,17 +1,43 @@
 @import './variables.scss';
 
 .n-btn {
+  outline: none;
   font-size: $btn-content;
   padding: $btn-padding;
   border-radius: $btn-border-radius;
-  background: $color-default;
+  background: $color;
   border: $btn-border;
+  cursor: pointer;
+  &:focus{
+    box-shadow: inset 0 0 1rem $color-border ;
+  }
+  &:active{
+    background-color: $color-background;
+
+  }
+
+
+
+}
+.n-btn-disabled{
+  cursor: not-allowed;
 }
 .n-btn-primary {
-  //border: $btn-border-primary;
-  // background: $color-primary;
+  border: $btn-border-primary;
+  background: $color-primary;
+  color: $color-accent-primary;
+  &:focus{
+     box-shadow: inset 0 0 10rem $color-focus-primary;
+  }
+  &:active{
+    background-color: $color-background-primary;
+  }
+  &.n-btn-disabled{
+   // background-color: red;
+  }
 }
 
 .n-btn-small {
   // padding: $btn-padding;
 }
+
