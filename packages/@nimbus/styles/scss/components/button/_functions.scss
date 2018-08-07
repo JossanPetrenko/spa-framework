@@ -1,0 +1,13 @@
+@mixin button-color ($color ,$border, $font){
+  $color-accent: lighten($color, 30%);
+
+
+  border: $border;
+  background-color: $color;
+  color: $font;
+  &:focus{
+  }
+
+  @include ripple($color, $color-accent);
+
+}

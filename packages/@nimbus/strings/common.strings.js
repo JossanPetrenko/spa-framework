@@ -7,8 +7,11 @@ export default extend({
         //keep alphabetical order
         'button': 'BUTTON',
         'desabilitado': 'Desabilitado',
+        'flat': 'Flat',
+        'outline': 'Outline',
         'padrao': 'Padrão',
         'primario': 'Primário',
         'secundario': 'Secundário',
+        'icone': 'Ícone',
     }
 });

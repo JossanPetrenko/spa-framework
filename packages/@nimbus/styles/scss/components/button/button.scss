@@ -1,3 +1,4 @@
+@import './functions.scss';
 @import './variables.scss';
 
 .n-btn {
@@ -5,39 +6,31 @@
   font-size: $btn-content;
   padding: $btn-padding;
   border-radius: $btn-border-radius;
-  background: $color;
-  border: $btn-border;
+  background: $color-gray;
+  color: $color-black;
+  margin-right: $margin-xxs;
+  @include button-color($color-gray, $btn-border, $color-black);
   cursor: pointer;
   &:focus{
-    box-shadow: inset 0 0 1rem $color-border ;
+    opacity: .80;
   }
   &:active{
-    background-color: $color-background;
-
   }
-
-
 
 }
 .n-btn-disabled{
   cursor: not-allowed;
-}
-.n-btn-primary {
-  border: $btn-border-primary;
-  background: $color-primary;
-  color: $color-accent-primary;
-  &:focus{
-     box-shadow: inset 0 0 10rem $color-focus-primary;
-  }
-  &:active{
-    background-color: $color-background-primary;
-  }
-  &.n-btn-disabled{
-   // background-color: red;
-  }
+  opacity: .40;
 }
 
-.n-btn-small {
-  // padding: $btn-padding;
+.n-btn-primary {
+ @include button-color($color-primary, $btn-border-primary, $color-font-primary);
 }
+
+
+.n-btn-secondary {
+  @include button-color($color-secondary, $btn-border-secondary, $color-font-secondary);
+ }
+
+
 

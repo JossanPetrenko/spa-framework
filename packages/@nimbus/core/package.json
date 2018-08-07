@@ -1,6 +1,6 @@
 {
-	"name": "@nimbus/button",
-	"version": "0.1.0",
+	"name": "@nimbus/core",
+	"version": "0.1.1",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -9,8 +9,6 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@nimbus/styles": "^0.1.1",
-		"@nimbus/core": "^0.1.1"
 	},
 	"peerDependencies": {
 		"react": "^16.0.0"

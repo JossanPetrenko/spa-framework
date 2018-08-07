@@ -1,32 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import {css} from '@nimbus/core';
 
 export default class Button extends React.PureComponent {
   render () {
-    const { onClick, children, primary, secundary, sm, disabled, outlined, } = this.props;
+    const {
+      children,
+      primary,
+      secondary,
+      sm,
+      disabled,
+      outlined,
+      ...buttonProps
+    } = this.props;
 
-    const classList = ['n-btn'];
-
-    if (primary) {
-      classList.push ('n-btn-primary btn-6');
-    }
-    if (disabled) {
-      classList.push ('n-btn-disabled');
-    }
-    if (secundary) {
-      classList.push ('n-btn-secundary');
-    }
-    if (outlined) {
-      classList.push ('n-btn-outlined');
-    }
-    if (sm) {
-      classList.push ('n-btn-sm');
-    }
-
+    const classList = css ('n-btn', {
+      'n-btn-primary': primary,
+      'n-btn-disabled': disabled,
+      'n-btn-secondary': secondary,
+      'n-btn-outlined': outlined,
+      'n-btn-sm': sm,
+    } );
 
     return (
-      <button className={classList.join (' ')} onClick={onClick} disabled={disabled}>
+      <button className={classList} disabled={disabled} {...buttonProps}>
         {children}
       </button>
     );
@@ -58,8 +55,6 @@ Button.propTypes = {
 
   /** Estilo botão outlined */
   outlined: PropTypes.bool,
-
-
 };
 
 Button.defaultProps = {

@@ -4,7 +4,6 @@ name: nimbus/button
 
 import '../styles/scss/theme.scss';
 import {t} from '../strings/index.js';
-import { Row,Col } from 'react-grid-system';
 
 # **Button**
 
@@ -14,24 +13,47 @@ import Button from './index';
 
 <PropsTable of={Button} />
 
-## Types
-
-
+## Padrão
 ### Exemplos
 
 <Playground  >
-  <Row>
-    <Col md={3}>
-      <Button>{t('common.padrao')}</Button>
-    </Col>
-    <Col md={3}>
+    <Button>{t('common.padrao')}</Button>
     <Button disabled>{t('common.desabilitado')}</Button>
-    </Col>
-      <Col md={3}>
+</Playground>
+
+
+## Enfatizado
+### Exemplos
+
+<Playground  >
     <Button primary>{t('common.primario')}</Button>
-    </Col>
-      <Col md={3}>
-    <Button primary disabled>{t('common.primario')}</Button>
-    </Col>
-  </Row>
+    <Button secondary>{t('common.secundario')}</Button>
+</Playground>
+
+## Intenções
+### Exemplos
+
+<Playground  >
+    <Button primary>{t('common.primario')}</Button>
+    <Button secondary>{t('common.secundario')}</Button>
+</Playground>
+
+
+
+## Variations
+### Exemplos
+
+<Playground  >
+    <Button outline >{t('common.outline')}</Button>
+    <Button flat >{t('common.flat')}</Button>
+</Playground>
+
+
+## Icon
+### Exemplos
+
+<Playground  >
+    <Button icon="mdi mdi-plus" primary>{t('common.padrao')}</Button>
+    <Button icon="mdi mdi-plus" secondary>{t('common.desabilitado')}</Button>
+    <Button icon="mdi mdi-plus" outline >{t('common.outline')}</Button>
 </Playground>

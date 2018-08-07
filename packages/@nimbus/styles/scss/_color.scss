@@ -1,28 +1,19 @@
   //--- named colors
 
-//default
-$color-accent: #000 !default;
-$color-background: #eee !default;
-$color-border: rgba(0, 0, 0, 0.12) !default;
-$color-success: #24ba45 !default;
-$color: #e0e1e2 !default;
+$color-gray: #e0e1e2 !default;
+$color-light-gray: #e7ecf1 !default;
+$color-white: #eee !default;
+$color-black: #000 !default;
 
 
-//primary
-$color-accent-primary: #fff !default;
-$color-background-primary: #5397D9 !default;
-$color-focus-primary: #64A1DE !default;
 $color-primary: #1976d2 !default;
-$color-success-primary: #24ba45 !default;
-
-
-//secundary
-$color-secondary: #f2711b !default;
-
+$color-secondary: #9f55f1 !default;
+$color-accent: #f2711b !default;
+$color-success: #24ba45 !default;
 
 $color-primary-dark: darken($color-primary, 15%);
 $color-secondary-dark: darken($color-secondary, 15%);
-$color-accent-dark: #000; //darken($color-accent, 15%);
+$color-accent-dark: darken($color-accent, 15%);
 $color-success-dark:  darken($color-success, 15%);
 
 $color-primary-light: lighten($color-primary, 15%);
@@ -30,14 +21,13 @@ $color-secondary-light: lighten($color-secondary, 15%);
 $color-accent-light: lighten($color-accent, 15%);
 $color-success-light:  lighten($color-success, 15%);
 
-
-$color-font-primary-dark: #000;//choose-font-color($color-primary-dark) !default;
+$color-font-primary-dark: #000; //choose-font-color($color-primary-dark) !default;
 $color-font-primary: #fff; //choose-font-color($color-primary) !default;
 $color-font-primary-light: #fff; //choose-font-color($color-primary-light) !default;
 
-$color-font-secondary-dark: choose-font-color($color-secondary-dark) !default;
-$color-font-secondary: choose-font-color($color-secondary) !default;
-$color-font-secondary-light: choose-font-color($color-secondary-light) !default;
+$color-font-secondary-dark: #000;//choose-font-color($color-secondary-dark) !default;
+$color-font-secondary: #fff; //choose-font-color($color-secondary) !default;
+$color-font-secondary-light: #fff; //choose-font-color($color-secondary-light) !default;
 
 $color-font-accent-dark: choose-font-color($color-accent-dark) !default;
 $color-font-accent: choose-font-color($color-accent) !default;
