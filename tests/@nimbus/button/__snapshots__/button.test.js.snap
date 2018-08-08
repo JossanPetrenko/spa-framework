@@ -1,17 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> deve renderizar o botão desabilitado 1`] = `
+exports[`<Button /> deve renderizar o botão danger 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
-    disabled={true}
+    danger={true}
+    disabled={false}
+    info={false}
+    lg={false}
     outlined={false}
     primary={false}
     secundary={false}
-    small={false}
+    sm={false}
+    success={false}
+    warning={false}
   >
-    Desabilitado
+    Perigo
   </Button>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -25,14 +30,13 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Desabilitado",
-      "className": "n-btn n-btn-disabled",
-      "disabled": true,
+      "children": "Perigo",
+      "className": "n-btn n-btn-danger",
+      "disabled": false,
       "secundary": false,
-      "small": false,
     },
     "ref": null,
-    "rendered": "Desabilitado",
+    "rendered": "Perigo",
     "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -41,14 +45,13 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Desabilitado",
-        "className": "n-btn n-btn-disabled",
-        "disabled": true,
+        "children": "Perigo",
+        "className": "n-btn n-btn-danger",
+        "disabled": false,
         "secundary": false,
-        "small": false,
       },
       "ref": null,
-      "rendered": "Desabilitado",
+      "rendered": "Perigo",
       "type": "button",
     },
   ],
@@ -62,16 +65,21 @@ ShallowWrapper {
 }
 `;
 
-exports[`<Button /> deve renderizar o botão padrão 1`] = `
+exports[`<Button /> deve renderizar o botão default 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
+    danger={false}
     disabled={false}
+    info={false}
+    lg={false}
     outlined={false}
     primary={false}
     secundary={false}
-    small={false}
+    sm={false}
+    success={false}
+    warning={false}
   >
     Padrão
   </Button>,
@@ -91,7 +99,6 @@ ShallowWrapper {
       "className": "n-btn",
       "disabled": false,
       "secundary": false,
-      "small": false,
     },
     "ref": null,
     "rendered": "Padrão",
@@ -107,7 +114,6 @@ ShallowWrapper {
         "className": "n-btn",
         "disabled": false,
         "secundary": false,
-        "small": false,
       },
       "ref": null,
       "rendered": "Padrão",
@@ -124,16 +130,151 @@ ShallowWrapper {
 }
 `;
 
-exports[`<Button /> deve renderizar o botão primario 1`] = `
+exports[`<Button /> deve renderizar o botão disabled 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
+    danger={false}
+    disabled={true}
+    info={false}
+    lg={false}
+    outlined={false}
+    primary={false}
+    secundary={false}
+    sm={false}
+    success={false}
+    warning={false}
+  >
+    Desabilitado
+  </Button>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Desabilitado",
+      "className": "n-btn n-btn-disabled",
+      "disabled": true,
+      "secundary": false,
+    },
+    "ref": null,
+    "rendered": "Desabilitado",
+    "type": "button",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Desabilitado",
+        "className": "n-btn n-btn-disabled",
+        "disabled": true,
+        "secundary": false,
+      },
+      "ref": null,
+      "rendered": "Desabilitado",
+      "type": "button",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<Button /> deve renderizar o botão info 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    danger={false}
     disabled={false}
+    info={true}
+    lg={false}
+    outlined={false}
+    primary={false}
+    secundary={false}
+    sm={false}
+    success={false}
+    warning={false}
+  >
+    Informações
+  </Button>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Informações",
+      "className": "n-btn n-btn-info",
+      "disabled": false,
+      "secundary": false,
+    },
+    "ref": null,
+    "rendered": "Informações",
+    "type": "button",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Informações",
+        "className": "n-btn n-btn-info",
+        "disabled": false,
+        "secundary": false,
+      },
+      "ref": null,
+      "rendered": "Informações",
+      "type": "button",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<Button /> deve renderizar o botão primary 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    danger={false}
+    disabled={false}
+    info={false}
+    lg={false}
     outlined={false}
     primary={true}
     secundary={false}
-    small={false}
+    sm={false}
+    success={false}
+    warning={false}
   >
     Primário
   </Button>,
@@ -153,7 +294,6 @@ ShallowWrapper {
       "className": "n-btn n-btn-primary",
       "disabled": false,
       "secundary": false,
-      "small": false,
     },
     "ref": null,
     "rendered": "Primário",
@@ -169,7 +309,6 @@ ShallowWrapper {
         "className": "n-btn n-btn-primary",
         "disabled": false,
         "secundary": false,
-        "small": false,
       },
       "ref": null,
       "rendered": "Primário",
@@ -186,17 +325,22 @@ ShallowWrapper {
 }
 `;
 
-exports[`<Button /> deve renderizar o botão secundario 1`] = `
+exports[`<Button /> deve renderizar o botão secundary 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
+    danger={false}
     disabled={false}
+    info={false}
+    lg={false}
     outlined={false}
     primary={false}
     secondary={true}
     secundary={false}
-    small={false}
+    sm={false}
+    success={false}
+    warning={false}
   >
     Secundário
   </Button>,
@@ -216,7 +360,6 @@ ShallowWrapper {
       "className": "n-btn n-btn-secondary",
       "disabled": false,
       "secundary": false,
-      "small": false,
     },
     "ref": null,
     "rendered": "Secundário",
@@ -232,10 +375,139 @@ ShallowWrapper {
         "className": "n-btn n-btn-secondary",
         "disabled": false,
         "secundary": false,
-        "small": false,
       },
       "ref": null,
       "rendered": "Secundário",
+      "type": "button",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<Button /> deve renderizar o botão success 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    danger={false}
+    disabled={false}
+    info={false}
+    lg={false}
+    outlined={false}
+    primary={false}
+    secundary={false}
+    sm={false}
+    success={true}
+    warning={false}
+  >
+    Sucesso
+  </Button>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Sucesso",
+      "className": "n-btn n-btn-success",
+      "disabled": false,
+      "secundary": false,
+    },
+    "ref": null,
+    "rendered": "Sucesso",
+    "type": "button",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Sucesso",
+        "className": "n-btn n-btn-success",
+        "disabled": false,
+        "secundary": false,
+      },
+      "ref": null,
+      "rendered": "Sucesso",
+      "type": "button",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<Button /> deve renderizar o botão warning 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    danger={false}
+    disabled={false}
+    info={false}
+    lg={false}
+    outlined={false}
+    primary={false}
+    secundary={false}
+    sm={false}
+    success={false}
+    warning={true}
+  >
+    Alerta
+  </Button>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Alerta",
+      "className": "n-btn n-btn-warning",
+      "disabled": false,
+      "secundary": false,
+    },
+    "ref": null,
+    "rendered": "Alerta",
+    "type": "button",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Alerta",
+        "className": "n-btn n-btn-warning",
+        "disabled": false,
+        "secundary": false,
+      },
+      "ref": null,
+      "rendered": "Alerta",
       "type": "button",
     },
   ],
