@@ -56,12 +56,23 @@ Button.propTypes = {
   /** Evento clicar, dispara a função onClick */
   onClick: PropTypes.func,
 
-
   /** Estilo botão primário */
   primary: PropTypes.bool,
 
   /** Estilo botão secundário */
   secundary: PropTypes.bool,
+
+  /** Estilo botão informação */
+  info: PropTypes.bool,
+
+  /** Estilo botão alerta */
+  warning: PropTypes.bool,
+
+  /** Estilo botão sucesso */
+  success: PropTypes.bool,
+
+  /** Estilo botão perigo */
+  danger: PropTypes.bool,
 
   /** Botão se torna desabilitado */
   disabled: PropTypes.bool,
