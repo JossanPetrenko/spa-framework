@@ -27,10 +27,25 @@
  @include button-color($color-primary, $btn-border-primary, $color-font-primary);
 }
 
-
 .n-btn-secondary {
   @include button-color($color-secondary, $btn-border-secondary, $color-font-secondary);
- }
+}
+
+.n-btn-success {
+  @include button-color($color-success, $btn-border-success, $color-font-primary);
+}
+
+.n-btn-danger {
+  @include button-color($color-danger, $btn-border-danger, $color-font-primary);
+}
+
+.n-btn-info {
+  @include button-color($color-info, $btn-border-info, $color-font-primary);
+}
+
+.n-btn-warning {
+  @include button-color($color-warning, $btn-border-warning, $color-font-primary);
+}
 
 
 

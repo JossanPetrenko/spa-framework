@@ -32,4 +32,12 @@ describe('<Button />', () => {
     expect(wrapper.text()).to.contain(t('common.primario'));
   });
 
+  it('deve renderizar o botão secundario', () => {
+    const wrapper = shallow(
+        <Button secondary>{t('common.secundario')}</Button>
+    );
+    expect(wrapper).to.matchSnapshot();
+    expect(wrapper.text()).to.contain(t('common.secundario'));
+  });
+
 });

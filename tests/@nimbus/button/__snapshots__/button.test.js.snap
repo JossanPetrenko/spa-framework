@@ -28,7 +28,8 @@ ShallowWrapper {
       "children": "Desabilitado",
       "className": "n-btn n-btn-disabled",
       "disabled": true,
-      "onClick": undefined,
+      "secundary": false,
+      "small": false,
     },
     "ref": null,
     "rendered": "Desabilitado",
@@ -43,7 +44,8 @@ ShallowWrapper {
         "children": "Desabilitado",
         "className": "n-btn n-btn-disabled",
         "disabled": true,
-        "onClick": undefined,
+        "secundary": false,
+        "small": false,
       },
       "ref": null,
       "rendered": "Desabilitado",
@@ -88,7 +90,8 @@ ShallowWrapper {
       "children": "Padrão",
       "className": "n-btn",
       "disabled": false,
-      "onClick": undefined,
+      "secundary": false,
+      "small": false,
     },
     "ref": null,
     "rendered": "Padrão",
@@ -103,7 +106,8 @@ ShallowWrapper {
         "children": "Padrão",
         "className": "n-btn",
         "disabled": false,
-        "onClick": undefined,
+        "secundary": false,
+        "small": false,
       },
       "ref": null,
       "rendered": "Padrão",
@@ -148,7 +152,8 @@ ShallowWrapper {
       "children": "Primário",
       "className": "n-btn n-btn-primary",
       "disabled": false,
-      "onClick": undefined,
+      "secundary": false,
+      "small": false,
     },
     "ref": null,
     "rendered": "Primário",
@@ -163,10 +168,74 @@ ShallowWrapper {
         "children": "Primário",
         "className": "n-btn n-btn-primary",
         "disabled": false,
-        "onClick": undefined,
+        "secundary": false,
+        "small": false,
       },
       "ref": null,
       "rendered": "Primário",
+      "type": "button",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<Button /> deve renderizar o botão secundario 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    disabled={false}
+    outlined={false}
+    primary={false}
+    secondary={true}
+    secundary={false}
+    small={false}
+  >
+    Secundário
+  </Button>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Secundário",
+      "className": "n-btn n-btn-secondary",
+      "disabled": false,
+      "secundary": false,
+      "small": false,
+    },
+    "ref": null,
+    "rendered": "Secundário",
+    "type": "button",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Secundário",
+        "className": "n-btn n-btn-secondary",
+        "disabled": false,
+        "secundary": false,
+        "small": false,
+      },
+      "ref": null,
+      "rendered": "Secundário",
       "type": "button",
     },
   ],

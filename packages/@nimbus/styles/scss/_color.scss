@@ -1,16 +1,22 @@
-  //--- named colors
-
+//--- named colors
+//pure color
 $color-gray: #e0e1e2 !default;
 $color-light-gray: #e7ecf1 !default;
 $color-white: #eee !default;
 $color-black: #000 !default;
 
-
+//primary-secondary
 $color-primary: #1976d2 !default;
-$color-secondary: #9f55f1 !default;
+$color-secondary: #7C4DFF !default;
 $color-accent: #f2711b !default;
-$color-success: #24ba45 !default;
 
+//intents
+$color-info: #03AFFF !default;
+$color-warning: #FF9800 !default;
+$color-danger: #D32F2F !default;
+$color-success: #4CAF50 !default;
+
+//dark-light
 $color-primary-dark: darken($color-primary, 15%);
 $color-secondary-dark: darken($color-secondary, 15%);
 $color-accent-dark: darken($color-accent, 15%);
@@ -19,8 +25,9 @@ $color-success-dark:  darken($color-success, 15%);
 $color-primary-light: lighten($color-primary, 15%);
 $color-secondary-light: lighten($color-secondary, 15%);
 $color-accent-light: lighten($color-accent, 15%);
-$color-success-light:  lighten($color-success, 15%);
+$color-success-light:  darken($color-success, 15%);
 
+//font-color
 $color-font-primary-dark: #000; //choose-font-color($color-primary-dark) !default;
 $color-font-primary: #fff; //choose-font-color($color-primary) !default;
 $color-font-primary-light: #fff; //choose-font-color($color-primary-light) !default;
