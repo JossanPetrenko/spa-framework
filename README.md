@@ -4,6 +4,12 @@
 
 ## Getting Started
 
+### Prerequisites
+```
+yarn global add verdaccio
+```
+
+### Start
 start verdaccio
 ```
 verdaccio
@@ -14,12 +20,7 @@ start docz
 docz dev
 ```
 
-### Prerequisites
 
-
-```
-yarn global add verdaccio
-```
 
 ### Installing
 
