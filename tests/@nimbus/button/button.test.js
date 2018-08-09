@@ -2,10 +2,23 @@ import React from 'react';
 import {expect} from 'chai';
 import {render} from 'enzyme';
 import {t} from '../../../packages/@nimbus/strings/index.js';
+import sinon from 'sinon';
 
 import Button from '../../../packages/@nimbus/button';
 
+
+
+
 describe ('<Button />', () => {
+  //onClick
+  it ('deve clicar o botão default', () => {
+    const callback = sinon.fake();
+    const wrapper = shallow (<Button onClick={callback}>{t ('common.padrao')}</Button>);
+    wrapper.simulate('click');
+    expect(callback.called).to.be.true;
+
+  });
+
   //default
   it ('deve renderizar o botão default', () => {
     const wrapper = shallow (<Button>{t ('common.padrao')}</Button>);
