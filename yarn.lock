@@ -831,6 +831,10 @@
   version "0.7.3"
   resolved "http://localhost:4873/@emotion%2futils/-/utils-0.7.3.tgz#4240c5eee8af86843452af7497ac2808be04a77d"
 
+"@fortawesome/fontawesome-free@^5.2.0":
+  version "5.2.0"
+  resolved "http://localhost:4873/@fortawesome%2ffontawesome-free/-/fontawesome-free-5.2.0.tgz#50cd9856774351c56c0b1b0db4efe122d7913e58"
+
 "@mdx-js/loader@^0.14.1":
   version "0.14.1"
   resolved "http://localhost:4873/@mdx-js%2floader/-/loader-0.14.1.tgz#975e69cabda1f8f389db28fc7cf533592b364d89"
