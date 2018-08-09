@@ -1,7 +1,6 @@
-
 //default
 $btn-border-radius: $border-radius-md !default;
-$btn-border: $border-md solid rgba(0, 0, 0, 0.12) !default;
+$btn-border: $border-md solid $color-gray-dark !default;
 $btn-color-background: $color-gray;
 $btn-content: $content-md !default;
 $btn-padding: $padding-md $padding-xl !default;
@@ -23,3 +22,4 @@ $btn-border-info: $border-md solid $color-info !default;
 
 //warning
 $btn-border-warning: $border-md solid $color-warning !default;
+

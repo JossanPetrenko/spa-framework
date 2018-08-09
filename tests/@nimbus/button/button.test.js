@@ -72,4 +72,12 @@ describe('<Button />', () => {
     expect(wrapper.text()).to.contain(t('common.perigo'));
   })
 
+  it('deve renderizar o botão outlined', () => {
+    const wrapper = shallow(
+        <Button outlined>{t('common.outlined')}</Button>
+    );
+    expect(wrapper).to.matchSnapshot();
+    expect(wrapper.text()).to.contain(t('common.outlined'));
+  })
+
 });

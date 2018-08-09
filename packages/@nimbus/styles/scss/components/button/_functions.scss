@@ -1,13 +1,27 @@
-@mixin button-color ($color ,$border, $font){
-  $color-accent: lighten($color, 30%);
+@mixin button-colors($color, $border, $font, $type:'default') {
+
+  @if $type=='outlined'{
+
+  }@else{
 
 
+    @if $color == $color-white {
+      $color-accent: $color-gray;
+    }
+    border: $border;
+    background-color: $color;
+    color: $font;
+
+  @include ripple($color,$color-gray-light);
+}
+}
+
+@mixin button-outlined-colors($border, $font) {
+  $color-ripple: lighten($font, 20%);
+  $color-accent: lighten($font, 40%);
   border: $border;
-  background-color: $color;
+  background-color: $color-white;
   color: $font;
-  &:focus{
-  }
 
-  @include ripple($color, $color-accent);
-
+  @include ripple($color-accent,$color-ripple);
 }

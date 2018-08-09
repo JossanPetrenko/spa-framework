@@ -26,8 +26,8 @@ import Button from './index';
 ### Exemplos
 
 <Playground  >
-    <Button primary>{t('common.primario')}</Button>
-    <Button secondary>{t('common.secundario')}</Button>
+    <Button color='primary'>{t('common.primario')}</Button>
+    <Button color='secondary'>{t('common.secundario')}</Button>
     <Button primary disabled>{t('common.desabilitado')}</Button>
     <Button secondary disabled>{t('common.desabilitado')}</Button>
 </Playground>
@@ -52,10 +52,15 @@ import Button from './index';
 ### Exemplos
 
 <Playground  >
-    <Button outline >{t('common.outline')}</Button>
-    <Button flat >{t('common.flat')}</Button>
-    <Button outline disabled >{t('common.outline')}</Button>
-    <Button flat disabled>{t('common.flat')}</Button>
+    <Button outlined >{t('common.outline')}</Button>
+    <Button outlined disabled>{t('common.outline')}</Button>
+    <Button outlined color="primary">{t('common.outline')}</Button>
+    <Button outlined color="primary" disabled>{t('common.outline')}</Button>
+    <Button outlined color="secondary">{t('common.outline')}</Button>
+    <Button outlined color="secondary" disabled>{t('common.outline')}</Button>
+    {/* <Button flat >{t('common.flat')}</Button>
+    <Button outlined disabled >{t('common.outline')}</Button>
+    <Button flat disabled>{t('common.flat')}</Button> */}
 </Playground>
 
 

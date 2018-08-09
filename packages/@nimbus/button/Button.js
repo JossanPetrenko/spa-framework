@@ -7,6 +7,8 @@ export default class Button extends React.PureComponent {
     const {
       children,
 
+      color,
+
       disabled,
       outlined,
 
@@ -24,18 +26,35 @@ export default class Button extends React.PureComponent {
       ...buttonProps
     } = this.props;
 
-    const classList = css ('n-btn', {
-      'n-btn-primary': primary,
+    let classList = css ('n-btn', {
+     //'n-btn-primary': primary,
       'n-btn-disabled': disabled,
-      'n-btn-secondary': secondary,
+      //'n-btn-secondary': secondary,
       'n-btn-outlined': outlined,
       'n-btn-lg': lg,
       'n-btn-sm': sm,
-      'n-btn-success':success,
-      'n-btn-danger':danger,
-      'n-btn-info':info,
-      'n-btn-warning':warning,
-    } );
+      'n-btn-success': success,
+      'n-btn-danger': danger,
+      'n-btn-info': info,
+      'n-btn-warning': warning,
+    });
+
+    //intents ands type
+    if (color=='primary') {
+      if(outlined){
+        classList += ' outlined-primary';
+      }else{
+        classList += ' primary';
+      }
+    }
+    if (color=='secondary') {
+      if(outlined){
+        classList += ' outlined-secondary';
+      }else{
+        classList += ' secondary';
+      }
+    }
+
 
     return (
       <button className={classList} disabled={disabled} {...buttonProps}>
@@ -85,6 +104,9 @@ Button.propTypes = {
 
   /** Estilo botão grande */
   lg: PropTypes.bool,
+
+  /** Estilo botão grande */
+  color: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -96,6 +118,7 @@ Button.defaultProps = {
   secundary: false,
   info: false,
   warning: false,
-  success:false,
-  danger:false,
+  success: false,
+  danger: false,
+  color: '',
 };
