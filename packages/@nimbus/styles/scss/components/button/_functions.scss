@@ -1,27 +1,35 @@
-@mixin button-colors($color, $border, $font, $type:'default') {
+@mixin button($color, $color-hover, $border, $color-font, $color-ripple: lighten($color, 20%), $color-font-outlined: $color) {
 
-  @if $type=='outlined'{
-
-  }@else{
-
-
-    @if $color == $color-white {
-      $color-accent: $color-gray;
-    }
-    border: $border;
-    background-color: $color;
-    color: $font;
-
-  @include ripple($color,$color-gray-light);
-}
-}
-
-@mixin button-outlined-colors($border, $font) {
-  $color-ripple: lighten($font, 20%);
-  $color-accent: lighten($font, 40%);
   border: $border;
-  background-color: $color-white;
-  color: $font;
+  background-color: $color;
+  color: $color-font;
 
-  @include ripple($color-accent,$color-ripple);
+  @include ripple($color, $color-gray-light);
+
+  &.n-btn-outlined {
+    border: $border;
+    background-color: transparent;
+    color: $color-font-outlined;
+    &:not(:disabled) {
+      @include ripple($color-hover, $color-ripple);
+    }
+
+    &:disabled {
+      color: $color-black;
+    }
+  }
+
+  &.n-btn-flat {
+    border: none;
+    background-color: transparent;
+    color: $color-font-outlined;
+    &:not(:disabled) {
+      @include ripple($color-hover, $color-ripple);
+    }
+
+    &:disabled {
+      color: $color-black;
+    }
+  }
 }
+

@@ -1,4 +1,4 @@
-import { extend } from './polyglot';
+import {extend} from './polyglot';
 
 //prettier-ignore
 export default extend({
@@ -6,6 +6,7 @@ export default extend({
     common: {
         //keep alphabetical order
         'abrir_filtro': 'Abrir Filtro',
+        'adicionar': 'Adicionar',
         'alerta': 'Alerta',
         'aplicar': 'Aplicar',
         'aplicar_filtros': 'Aplicar Filtros',
@@ -15,6 +16,7 @@ export default extend({
         'cancelar': 'Cancelar',
         'configuracoes': 'Configuraçōes',
         'desabilitado': 'Desabilitado',
+        'deseja_realmente_remover': 'Deseja realmente remover?',
         'detalhes': 'Detalhes',
         'editar': 'Editar',
         'erro': 'Erro',
@@ -31,12 +33,14 @@ export default extend({
         'limpar': 'Limpar',
         'limpar_filtros': 'Limpar Filtros',
         'nao_e_permitido_acao_botao': 'Sem permissão para esta ação',
+        'novo': 'Novo',
         'não': 'Não',
         'ok': 'Ok',
-        'outline': 'Outline',
+        'outlined': 'Outlined',
         'padrao': 'Padrão',
         'perigo': 'Perigo',
         'primario': 'Primário',
+        'remover': 'Remover',
         'salvar': 'Salvar',
         'salvo_com_sucesso': 'Salvo com sucesso!',
         'secundario': 'Secundário',
@@ -46,15 +50,5 @@ export default extend({
         'tabela_vazia': 'Não há itens a serem exibidos',
         'visualizar': 'Visualizar',
         'voltar': 'Voltar',
-
-        'excluir': 'excluir',
-        'remover': 'Remover',
-        'deseja_realmente_remover': 'Deseja realmente remover?',
-
-        'novo': 'Novo',
-        'adicionar': 'Adicionar',
-
-
-
     }
 });

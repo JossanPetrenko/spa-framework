@@ -18,6 +18,9 @@ import Button from './index';
 
 <Playground  >
     <Button>{t('common.padrao')}</Button>
+
+    <br/>
+
     <Button disabled>{t('common.desabilitado')}</Button>
 </Playground>
 
@@ -26,49 +29,92 @@ import Button from './index';
 ### Exemplos
 
 <Playground  >
-    <Button color='primary'>{t('common.primario')}</Button>
-    <Button color='secondary'>{t('common.secundario')}</Button>
-    <Button primary disabled>{t('common.desabilitado')}</Button>
-    <Button secondary disabled>{t('common.desabilitado')}</Button>
+    <Button flavor='primary'>{t('common.primario')}</Button>
+    <Button flavor='secondary'>{t('common.secundario')}</Button>
+
+    <br/>
+
+    <Button flavor='primary' disabled>{t('common.primario')}</Button>
+    <Button flavor='secondary' disabled>{t('common.secundario')}</Button>
 </Playground>
 
 ## Intenções
 ### Exemplos
 
 <Playground  >
-    <Button info>{t('common.informacoes')}</Button>
-    <Button warning>{t('common.alerta')}</Button>
-    <Button success>{t('common.sucesso')}</Button>
-    <Button danger>{t('common.perigo')}</Button>
-    <Button info disabled>{t('common.desabilitado')}</Button>
-    <Button warning disabled>{t('common.desabilitado')}</Button>
-    <Button success disabled>{t('common.desabilitado')}</Button>
-    <Button danger disabled>{t('common.desabilitado')}</Button>
+    <Button flavor='info'>{t('common.informacoes')}</Button>
+    <Button flavor='warning'>{t('common.alerta')}</Button>
+    <Button flavor='success'>{t('common.sucesso')}</Button>
+    <Button flavor='danger'>{t('common.perigo')}</Button>
+
+    <br/>
+
+    <Button flavor='info' disabled>{t('common.informacoes')}</Button>
+    <Button flavor='warning' disabled>{t('common.alerta')}</Button>
+    <Button flavor='success' disabled>{t('common.sucesso')}</Button>
+    <Button flavor='danger' disabled>{t('common.perigo')}</Button>
 </Playground>
 
 
 
 ## Variations
-### Exemplos
+### Exemplos - Outlined
 
 <Playground  >
-    <Button outlined >{t('common.outline')}</Button>
-    <Button outlined disabled>{t('common.outline')}</Button>
-    <Button outlined color="primary">{t('common.outline')}</Button>
-    <Button outlined color="primary" disabled>{t('common.outline')}</Button>
-    <Button outlined color="secondary">{t('common.outline')}</Button>
-    <Button outlined color="secondary" disabled>{t('common.outline')}</Button>
-    {/* <Button flat >{t('common.flat')}</Button>
-    <Button outlined disabled >{t('common.outline')}</Button>
-    <Button flat disabled>{t('common.flat')}</Button> */}
+    <Button outlined >{t('common.outlined')}</Button>
+    <Button outlined flavor="primary">{t('common.primario')}</Button>
+    <Button outlined flavor="secondary">{t('common.secundario')}</Button>
+
+    <Button outlined flavor='info'>{t('common.informacoes')}</Button>
+    <Button outlined flavor='warning'>{t('common.alerta')}</Button>
+    <Button outlined flavor='success'>{t('common.sucesso')}</Button>
+    <Button outlined flavor='danger'>{t('common.perigo')}</Button>
+
+    <br />
+
+    <Button outlined disabled>{t('common.outlined')}</Button>
+    <Button outlined flavor="primary" disabled>{t('common.primario')}</Button>
+    <Button outlined flavor="secondary" disabled>{t('common.secundario')}</Button>
+
+    <Button outlined flavor='info' disabled>{t('common.informacoes')}</Button>
+    <Button outlined flavor='warning' disabled>{t('common.alerta')}</Button>
+    <Button outlined flavor='success' disabled>{t('common.sucesso')}</Button>
+    <Button outlined flavor='danger' disabled>{t('common.perigo')}</Button>
+
+
+
 </Playground>
 
+### Exemplos - Flat
+
+<Playground  >
+    <Button flat >{t('common.flat')}</Button>
+    <Button flat flavor="primary">{t('common.primario')}</Button>
+    <Button flat flavor="secondary">{t('common.secundario')}</Button>
+
+    <Button flat flavor='info'>{t('common.informacoes')}</Button>
+    <Button flat flavor='warning'>{t('common.alerta')}</Button>
+    <Button flat flavor='success'>{t('common.sucesso')}</Button>
+    <Button flat flavor='danger'>{t('common.perigo')}</Button>
+
+    <br />
+
+    <Button flat disabled>{t('common.flat')}</Button>
+    <Button flat flavor="primary" disabled>{t('common.primario')}</Button>
+    <Button flat flavor="secondary" disabled>{t('common.secundario')}</Button>
+
+    <Button flat flavor='info' disabled>{t('common.informacoes')}</Button>
+    <Button flat flavor='warning' disabled>{t('common.alerta')}</Button>
+    <Button flat flavor='success' disabled>{t('common.sucesso')}</Button>
+    <Button flat flavor='danger' disabled>{t('common.perigo')}</Button>
+
+</Playground>
 
 ## Icon
 ### Exemplos
 
 <Playground  >
-    <Button icon="mdi mdi-plus" primary>{t('common.padrao')}</Button>
-    <Button icon="mdi mdi-plus" secondary>{t('common.desabilitado')}</Button>
-    <Button icon="mdi mdi-plus" outline >{t('common.outline')}</Button>
+    <Button icon="mdi mdi-plus" flavor='primary'>{t('common.padrao')}</Button>
+    <Button icon="mdi mdi-plus" flavor='secondary'>{t('common.desabilitado')}</Button>
+    <Button icon="mdi mdi-plus" outline >{t('common.outlined')}</Button>
 </Playground>

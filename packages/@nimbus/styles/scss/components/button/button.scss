@@ -11,73 +11,41 @@
   background: $color-gray;
   color: $color-black;
   margin-right: $margin-xxs;
-  @include button-colors($color-gray, $btn-border, $color-black);
+  margin-bottom: $margin-xxs;
   cursor: pointer;
   &:focus {
     opacity: 0.8;
   }
 }
-.n-btn-disabled {
+.n-btn:disabled {
   cursor: not-allowed;
   opacity: 0.4;
 }
 
-// .n-btn-primary {
-//   @include button-colors($color-primary, $btn-border-primary, $color-font-primary);
-// }
-
-// .n-btn-secondary {
-//   @include button-colors($color-secondary, $btn-border-secondary, $color-font-secondary);
-// }
-
+.n-btn {
+  @include button($color-gray, $color-gray-light, $btn-border, $color-black, $color-gray-dark, $color-black);
+}
 
 .n-btn-success {
-  @include button-colors($color-success, $btn-border-success, $color-font-primary);
+  @include button($color-success, lighten($color-success, 45%), $btn-border-success, $color-font-primary);
 }
 
 .n-btn-danger {
-  @include button-colors($color-danger, $btn-border-danger, $color-font-primary);
+  @include button($color-danger, lighten($color-danger, 45%), $btn-border-danger, $color-font-primary);
 }
 
 .n-btn-info {
-  @include button-colors($color-info, $btn-border-info, $color-font-primary);
+  @include button($color-info, lighten($color-info, 45%), $btn-border-info, $color-font-primary);
 }
 
 .n-btn-warning {
-  @include button-colors($color-warning, $btn-border-warning, $color-font-primary);
+  @include button($color-warning, lighten($color-warning, 45%), $btn-border-warning, $color-font-primary);
 }
 
-.primary{
-  @include button-colors($color-primary, $btn-border-primary, $color-font-primary );
+.n-btn-primary{
+  @include button($color-primary, lighten($color-primary, 45%), $btn-border-primary, $color-font-primary );
 }
 
-.secondary {
-  @include button-colors($color-secondary, $btn-border-secondary, $color-font-secondary);
+.n-btn-secondary {
+  @include button($color-secondary,  lighten($color-secondary, 30%),$btn-border-secondary, $color-font-secondary);
 }
-
-.n-btn-outlined {
-  @include button-outlined-colors($btn-border, $color-black);
-}
-.outlined-primary {
-  @include button-outlined-colors($btn-border-primary, $color-primary);
-}
-.outlined-secondary {
-  @include button-outlined-colors($btn-border-secondary, $color-secondary);
-}
-.outlined-info {
-  @include button-outlined-colors($btn-border-info, $color-info);
-}
-.outlined-success {
-  @include button-outlined-colors($btn-border-success, $color-success);
-}
-.outlined-danger {
-  @include button-outlined-colors($btn-border-danger, $color-danger);
-}
-.outlined-warning {
-  @include button-outlined-colors($btn-border-success, $color-success);
-}
-
-
-
-
-
