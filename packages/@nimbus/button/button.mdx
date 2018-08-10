@@ -13,11 +13,47 @@ import Button from './index';
 
 <PropsTable of={Button} />
 
+<Playground  >
+    <Button icon="fas fa-stroopwafel" flavor='primary'></Button>
+    <Button icon="fas fa-stroopwafel" flavor='primary'>{t('common.icone')}</Button>
+    <Button icon="fas fa-stroopwafel" iconRight flavor='primary'>{t('common.icone')}</Button>
+    <br/>
+    <Button icon="mdi mdi-alien" flavor='primary'>{t('common.icone')}</Button>
+    <Button icon="mdi mdi-alien" flavor='secondary'>{t('common.icone')}</Button>
+    <Button icon="mdi mdi-alien" flavor='info'>{t('common.icone')}</Button>
+    <Button icon="mdi mdi-alien" flavor='warning'>{t('common.icone')}</Button>
+    <Button icon="mdi mdi-alien" flavor='success'>{t('common.icone')}</Button>
+    <Button icon="fas fa-stroopwafel" flavor='danger'>{t('common.icone')}</Button>
+    <br/>
+    <Button outlined icon="fas fa-stroopwafel" flavor='primary'>{t('common.icone')}</Button>
+    <Button outlined icon="fas fa-stroopwafel" flavor='secondary'>{t('common.icone')}</Button>
+    <Button outlined icon="fas fa-stroopwafel" flavor='info'>{t('common.icone')}</Button>
+    <Button outlined icon="fas fa-stroopwafel" flavor='warning'>{t('common.icone')}</Button>
+    <Button outlined icon="fas fa-stroopwafel" flavor='success'>{t('common.icone')}</Button>
+    <Button outlined icon="fas fa-stroopwafel" flavor='danger'>{t('common.icone')}</Button>
+    <br/>
+    <Button flat icon="fas fa-stroopwafel" flavor='primary'>{t('common.icone')}</Button>
+    <Button flat icon="fas fa-stroopwafel" flavor='secondary'>{t('common.icone')}</Button>
+    <Button flat icon="fas fa-stroopwafel" flavor='info'>{t('common.icone')}</Button>
+    <Button flat icon="fas fa-stroopwafel" flavor='warning'>{t('common.icone')}</Button>
+    <Button flat icon="fas fa-stroopwafel" flavor='success'>{t('common.icone')}</Button>
+    <Button flat icon="fas fa-stroopwafel" flavor='danger'>{t('common.icone')}</Button>
+
+    {/* <Button icon="mdi mdi-plus" flavor='primary' flat>{t('common.primario')}</Button>
+    <Button icon="mdi mdi-plus" flavor='secondary' outlined >{t('common.secundario')}</Button>
+
+    <Button flavor='info' >{t('common.informacoes')}</Button>
+    <Button flavor='warning' >{t('common.alerta')}</Button>
+    <Button flavor='success' >{t('common.sucesso')}</Button>
+    <Button flavor='danger' >{t('common.perigo')}</Button> */}
+</Playground>
+
+
 ## Padrão
 ### Exemplos
 
 <Playground  >
-    <Button>{t('common.padrao')}</Button>
+    <Button icon="stroopwafel">{t('common.padrao')}</Button>
 
     <br/>
 
@@ -57,7 +93,7 @@ import Button from './index';
 
 
 
-## Variations
+## Variações
 ### Exemplos - Outlined
 
 <Playground  >
@@ -110,11 +146,16 @@ import Button from './index';
 
 </Playground>
 
-## Icon
+## Ícone
 ### Exemplos
 
 <Playground  >
-    <Button icon="mdi mdi-plus" flavor='primary'>{t('common.padrao')}</Button>
-    <Button icon="mdi mdi-plus" flavor='secondary'>{t('common.desabilitado')}</Button>
-    <Button icon="mdi mdi-plus" outline >{t('common.outlined')}</Button>
+    <Button icon="mdi mdi-plus" flavor='primary'>{t('common.icone')}</Button>
+    <Button icon="mdi mdi-plus" flavor='primary' flat>{t('common.primario')}</Button>
+    <Button icon="mdi mdi-plus" flavor='secondary' outlined >{t('common.secundario')}</Button>
+
+    <Button flavor='info' >{t('common.informacoes')}</Button>
+    <Button flavor='warning' >{t('common.alerta')}</Button>
+    <Button flavor='success' >{t('common.sucesso')}</Button>
+    <Button flavor='danger' >{t('common.perigo')}</Button>
 </Playground>

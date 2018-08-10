@@ -6,9 +6,6 @@ import sinon from 'sinon';
 
 import Button from '../../../packages/@nimbus/button';
 
-
-
-
 describe ('<Button />', () => {
   //onClick
   it ('deve clicar o botão default', () => {

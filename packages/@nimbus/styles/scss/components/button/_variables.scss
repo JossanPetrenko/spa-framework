@@ -1,8 +1,12 @@
 //default
 $btn-border-radius: $border-radius-md !default;
 $btn-border: $border-md solid $color-gray-dark !default;
+
 $btn-color-background: $color-gray;
 $btn-content: $content-md !default;
+
+$btn-icon-padding: $padding-md $padding-xl $padding-md $padding-lg !default;
+$btn-icon-right-padding: $padding-md $padding-lg $padding-md $padding-xl !default;
 $btn-padding: $padding-md $padding-xl !default;
 
 //primary

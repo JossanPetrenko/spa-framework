@@ -2,13 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {css} from '@nimbus/core';
 
+
 export default class Button extends React.PureComponent {
+
+  handleIcon (icon) {
+      return(
+      <span className={`n-btn-icon-element ${icon}`} />);
+  }
+
+  // handleIconRight (iconRight) {
+  //   return(
+  //     <span>
+  //         <FontAwesomeIcon icon={iconRight} />
+  //     </span>);
+  // }
+
   render () {
     const {
       children,
+      flavor,
+
       outlined,
       flat,
-      flavor,
+
+      icon,
+      iconRight,
 
       ...buttonProps
     } = this.props;
@@ -17,11 +35,23 @@ export default class Button extends React.PureComponent {
       [`n-btn-${flavor}`]: !!flavor,
       'n-btn-outlined': outlined,
       'n-btn-flat': flat,
+      'n-btn-icon': icon,
+      'n-btn-icon-right': iconRight,
     });
+
+    if (!children) {
+      classList += ' n-btn-childrenless';
+    }
 
     return (
       <button className={classList} {...buttonProps}>
+
+        {icon ? this.handleIcon (icon, iconRight) : null}
+
         {children}
+
+        {/* {iconRight ? this.handleIcon (iconRight) : null} */}
+
       </button>
     );
   }
@@ -58,6 +88,9 @@ Button.propTypes = {
 
   /** Botão se torna estilo outlined */
   outlined: PropTypes.bool,
+
+  /** Botão usa ícone */
+  icon: PropTypes.bool,
 };
 
 Button.defaultProps = {};

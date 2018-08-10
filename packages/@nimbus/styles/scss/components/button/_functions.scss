@@ -17,6 +17,9 @@
     &:disabled {
       color: $color-black;
     }
+    span{
+      color: $color-font;
+    }
   }
 
   &.n-btn-flat {
@@ -29,6 +32,11 @@
 
     &:disabled {
       color: $color-black;
+    }
+  }
+  &.n-btn-outlined {
+    span{
+      color: $color-font-outlined;
     }
   }
 }
