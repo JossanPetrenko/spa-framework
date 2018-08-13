@@ -18,7 +18,7 @@ export default class Button extends React.PureComponent {
       icon,
       iconRight,
 
-      ...buttonProps
+      ...othersProps
     } = this.props;
 
     let classList = css ('n-btn', {
@@ -34,7 +34,7 @@ export default class Button extends React.PureComponent {
     }
 
     return (
-      <button className={classList} {...buttonProps}>
+      <button className={classList} {...othersProps}>
 
         {icon ? this.handleIcon (icon) : null}
 
@@ -56,7 +56,7 @@ Button.propTypes = {
   /** Evento clicar, dispara a função onClick */
   onClick: PropTypes.func,
 
-  /** Estilo de intenção botão */
+  /** Estilo de intenção do botão */
   flavor: PropTypes.oneOfType ([
     PropTypes.oneOf ([
       'primary',
