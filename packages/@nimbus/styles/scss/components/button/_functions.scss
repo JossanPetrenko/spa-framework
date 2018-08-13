@@ -1,5 +1,11 @@
-@mixin button($color, $color-hover, $border, $color-font, $color-ripple: lighten($color, 20%), $color-font-outlined: $color) {
-
+@mixin button(
+  $color,
+  $color-hover,
+  $border,
+  $color-font,
+  $color-ripple: lighten($color, 20%),
+  $color-font-outlined: $color
+) {
   border: $border;
   background-color: $color;
   color: $color-font;
@@ -17,13 +23,13 @@
     &:disabled {
       color: $color-black;
     }
-    span{
+    span {
       color: $color-font;
     }
   }
 
   &.n-btn-flat {
-    border: none;
+    border: $btn-border-flat;
     background-color: transparent;
     color: $color-font-outlined;
     &:not(:disabled) {
@@ -35,9 +41,8 @@
     }
   }
   &.n-btn-outlined {
-    span{
+    span {
       color: $color-font-outlined;
     }
   }
 }
-

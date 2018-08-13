@@ -1,7 +1,6 @@
 @import './functions.scss';
 @import './variables.scss';
 
-
 //default
 .n-btn {
   outline: none;
@@ -22,27 +21,34 @@
   opacity: 0.4;
 }
 
+//icon
 .n-btn-icon {
   padding: $btn-icon-padding;
-  span{
+  span {
     margin-right: $margin-xs;
   }
 }
 
 .n-btn-icon-right {
   padding: $btn-icon-right-padding;
-  span{
+  span {
+    float: right;
     margin-left: $margin-xs;
+    margin-right: 0px;
+    position: relative;
+    top: 1px;
   }
 }
 
-.n-btn-childrenless{
+//childrenless
+.n-btn-childrenless {
   padding: $btn-padding;
-  span{
+  span {
     margin: 0px;
   }
 }
 
+//button colors
 .n-btn {
   @include button($color-gray, $color-gray-light, $btn-border, $color-black, $color-gray-dark, $color-black);
 }
@@ -63,10 +69,10 @@
   @include button($color-warning, lighten($color-warning, 45%), $btn-border-warning, $color-font-primary);
 }
 
-.n-btn-primary{
-  @include button($color-primary, lighten($color-primary, 45%), $btn-border-primary, $color-font-primary );
+.n-btn-primary {
+  @include button($color-primary, lighten($color-primary, 45%), $btn-border-primary, $color-font-primary);
 }
 
 .n-btn-secondary {
-  @include button($color-secondary,  lighten($color-secondary, 30%),$btn-border-secondary, $color-font-secondary);
+  @include button($color-secondary, lighten($color-secondary, 30%), $btn-border-secondary, $color-font-secondary);
 }

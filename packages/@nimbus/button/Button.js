@@ -2,20 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {css} from '@nimbus/core';
 
-
 export default class Button extends React.PureComponent {
-
   handleIcon (icon) {
-      return(
-      <span className={`n-btn-icon-element ${icon}`} />);
+    return <span className={`n-btn-icon-element ${icon}`} />;
   }
-
-  // handleIconRight (iconRight) {
-  //   return(
-  //     <span>
-  //         <FontAwesomeIcon icon={iconRight} />
-  //     </span>);
-  // }
 
   render () {
     const {
@@ -46,11 +36,9 @@ export default class Button extends React.PureComponent {
     return (
       <button className={classList} {...buttonProps}>
 
-        {icon ? this.handleIcon (icon, iconRight) : null}
+        {icon ? this.handleIcon (icon) : null}
 
         {children}
-
-        {/* {iconRight ? this.handleIcon (iconRight) : null} */}
 
       </button>
     );
@@ -90,7 +78,10 @@ Button.propTypes = {
   outlined: PropTypes.bool,
 
   /** Botão usa ícone */
-  icon: PropTypes.bool,
+  icon: PropTypes.string,
+
+  /** Ícone no lado direito do botão */
+  iconRight: PropTypes.bool,
 };
 
 Button.defaultProps = {};
