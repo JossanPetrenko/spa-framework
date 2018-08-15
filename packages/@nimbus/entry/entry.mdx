@@ -4,6 +4,8 @@ name: nimbus/entry
 
 import '../styles/scss/theme.scss';
 import { t } from '../strings/index.js';
+import {Row, Col} from 'react-grid-system';
+
 
 # **Entry**
 
@@ -17,12 +19,20 @@ import { Text } from './index';
 ### Exemplos
 
 <Playground>
+
     <Text label={t ('common.label')} placeholder={t ('common.placeholder')} width='12rem'/>
     <Text label={t ('common.label')} placeholder={t ('common.placeholder')} width='200px'/>
-    <br/>
     <Text label={t ('common.label')} placeholder={t ('common.placeholder')} disabled width='50%'/>
     <Text label={t ('common.label')} placeholder={t ('common.placeholder')} disabled width='50%'/>
-    <br/>
-    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} disabled width='50%'/>
-    <Text placeholder={t ('common.placeholder')} disabled width='50%'/>
+
+    <Row>
+      <Col md={6}>
+        <Text label={t ('common.label')} placeholder={t ('common.placeholder')} disabled />
+      </Col>
+
+      <Col md={6}>
+        <Text  placeholder={t ('common.placeholder')} disabled  />
+      </Col>
+    </Row>
+
 </Playground>

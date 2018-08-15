@@ -56,8 +56,10 @@ export default class Text extends React.PureComponent {
 
 Text.propTypes = {
   /** Rótulo do input */
-  label: PropTypes.string,
-
+  label: PropTypes.PropTypes.oneOfType ([
+    PropTypes.string,
+    PropTypes.bool
+  ]),
   /** Placeholder do input */
   placeholder: PropTypes.string,
 

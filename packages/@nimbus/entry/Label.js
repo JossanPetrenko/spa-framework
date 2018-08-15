@@ -22,6 +22,7 @@ Label.propTypes = {
     PropTypes.string,
     PropTypes.element,
     PropTypes.node,
+    PropTypes.bool,
   ]),
 
   /** Rótulo para indicar ID */
