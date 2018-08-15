@@ -84,4 +84,5 @@ Button.propTypes = {
   iconRight: PropTypes.bool,
 };
 
-Button.defaultProps = {};
+Button.defaultProps = {
+};

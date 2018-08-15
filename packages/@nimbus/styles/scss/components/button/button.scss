@@ -11,14 +11,15 @@
   color: $color-black;
   margin-right: $margin-xxs;
   margin-bottom: $margin-xxs;
+  letter-spacing: $btn-letter-spacing;
   cursor: pointer;
   &:focus {
-    opacity: 0.8;
+    opacity: $opacity-md;
   }
 }
 .n-btn:disabled {
   cursor: not-allowed;
-  opacity: 0.4;
+  opacity: $opacity-lg;
 }
 
 //icon

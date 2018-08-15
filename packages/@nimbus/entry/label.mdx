@@ -1,0 +1,29 @@
+---
+name: nimbus/label
+---
+
+import '../styles/scss/theme.scss';
+import { t } from '../strings/index.js';
+
+# **Label**
+
+import { PropsTable, Playground } from 'docz'
+import { Label } from './index';
+
+
+<PropsTable of={Label} />
+
+## Label
+### Exemplos
+
+<Playground>
+
+    <Label>{t ('common.label')}</Label>
+    <Label>{t ('common.label')} </Label>
+
+    <br />
+
+    <Label width='50%'>{t ('common.label')} </Label>
+    <Label  width='50%'> {t ('common.label')}</Label>
+
+</Playground>

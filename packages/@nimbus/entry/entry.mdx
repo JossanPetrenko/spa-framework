@@ -1,0 +1,28 @@
+---
+name: nimbus/entry
+---
+
+import '../styles/scss/theme.scss';
+import { t } from '../strings/index.js';
+
+# **Entry**
+
+import { PropsTable, Playground } from 'docz'
+import { Text } from './index';
+
+
+<PropsTable of={Text} />
+
+## Text Entry
+### Exemplos
+
+<Playground>
+    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} width='12rem'/>
+    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} width='200px'/>
+    <br/>
+    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} disabled width='50%'/>
+    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} disabled width='50%'/>
+    <br/>
+    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} disabled width='50%'/>
+    <Text placeholder={t ('common.placeholder')} disabled width='50%'/>
+</Playground>

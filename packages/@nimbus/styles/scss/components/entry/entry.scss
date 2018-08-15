@@ -1,0 +1,19 @@
+@import './variables.scss';
+.n-entry-root{
+  font-size: $content-md;
+  display: inline-block;
+  margin-bottom: $margin-sm;
+  padding-right: $margin-xs;
+}
+.n-entry-text{
+  padding: $entry-padding;
+  width: $entry-width;
+  border: $entry-border;
+  border-radius: $entry-border-radius;
+  outline: none;
+  letter-spacing: $letter-spacing-md;
+}
+.n-entry-text:disabled{
+  cursor: not-allowed;
+  opacity: $opacity-lg;
+}

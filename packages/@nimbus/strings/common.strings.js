@@ -30,6 +30,7 @@ export default extend({
         'icone': 'Ícone',
         'informacoes': 'Informações',
         'invertido': 'Invertido',
+        'label': 'Label',
         'limpar': 'Limpar',
         'limpar_filtros': 'Limpar Filtros',
         'nao_e_permitido_acao_botao': 'Sem permissão para esta ação',
@@ -39,6 +40,7 @@ export default extend({
         'outlined': 'Outlined',
         'padrao': 'Padrão',
         'perigo': 'Perigo',
+        'placeholder': 'Placeholder',
         'primario': 'Primário',
         'remover': 'Remover',
         'salvar': 'Salvar',
@@ -48,6 +50,7 @@ export default extend({
         'sim': 'Sim',
         'sucesso': 'Sucesso',
         'tabela_vazia': 'Não há itens a serem exibidos',
+        'titulo': 'Título',
         'visualizar': 'Visualizar',
         'voltar': 'Voltar',
     }
