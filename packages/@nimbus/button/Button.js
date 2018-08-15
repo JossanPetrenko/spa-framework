@@ -46,17 +46,17 @@ export default class Button extends React.PureComponent {
 }
 
 Button.propTypes = {
-  /** Conteudo do botão */
+  /** Conteudo do botão. */
   children: PropTypes.oneOfType ([
     PropTypes.string,
     PropTypes.element,
     PropTypes.node,
   ]),
 
-  /** Evento clicar, dispara a função onClick */
+  /** Dispara a função onClick. */
   onClick: PropTypes.func,
 
-  /** Estilo de intenção do botão */
+  /** Estilo de intenção do botão. */
   flavor: PropTypes.oneOfType ([
     PropTypes.oneOf ([
       'primary',
@@ -68,19 +68,19 @@ Button.propTypes = {
     ]),
   ]),
 
-  /** Botão se torna desabilitado */
+  /** Botão se torna desabilitado. */
   disabled: PropTypes.bool,
 
-  /** Botão se torna estilo flat */
+  /** Botão se torna estilo flat. */
   flat: PropTypes.bool,
 
-  /** Botão se torna estilo outlined */
+  /** Botão se torna estilo outlined. */
   outlined: PropTypes.bool,
 
-  /** Botão usa ícone */
+  /** Botão usa ícone. */
   icon: PropTypes.string,
 
-  /** Ícone no lado direito do botão */
+  /** Ícone no lado direito do botão. */
   iconRight: PropTypes.bool,
 };
 

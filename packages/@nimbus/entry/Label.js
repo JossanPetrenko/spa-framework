@@ -17,7 +17,7 @@ export default class Label extends React.PureComponent {
 }
 
 Label.propTypes = {
-  /** Conteúdo da label */
+  /** Conteúdo da label. */
   children: PropTypes.oneOfType ([
     PropTypes.string,
     PropTypes.element,
@@ -25,7 +25,7 @@ Label.propTypes = {
     PropTypes.bool,
   ]),
 
-  /** Rótulo para indicar ID */
+  /** Rótulo para indicar ID. */
   htmlFor: PropTypes.string,
 };
 
