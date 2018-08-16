@@ -20,8 +20,11 @@ import { Text } from './index';
 
 <Playground>
 
-    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} width='12rem'/>
-    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} width='200px'/>
+    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} iconRight="fas fa-cloud" iconLeft="fas fa-cloud"/>
+    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} iconLeft="fas fa-cloud"/>
+    <Text label={t ('common.label')} placeholder={t ('common.placeholder')} iconRight="fas fa-cloud"/>
+
+    {/* <Text label={t ('common.label')} placeholder={t ('common.placeholder')} width='200px'/>
     <Text label={t ('common.label')} placeholder={t ('common.placeholder')} disabled width='50%'/>
     <Text label={t ('common.label')} placeholder={t ('common.placeholder')} disabled width='50%'/>
 
@@ -33,6 +36,6 @@ import { Text } from './index';
       <Col md={6}>
         <Text  placeholder={t ('common.placeholder')} disabled  />
       </Col>
-    </Row>
+    </Row> */}
 
 </Playground>

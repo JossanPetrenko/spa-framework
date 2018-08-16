@@ -1,10 +1,10 @@
+
 @import "_color.scss";
 @import "_dimen.scss";
 @import "_functions.scss";
 
+//Esse import deve ser ultimo
+@import "_reset.scss";
+
 @import "./components/components.scss";
 
-body {
-  font-family: 'Roboto', sans-serif ;
-  letter-spacing: $letter-spacing-md;
-}

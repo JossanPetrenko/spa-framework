@@ -10,38 +10,57 @@ export default class Text extends React.PureComponent {
     this.state = {id: props.id || `Text-${uuid ()}`};
   }
 
+  handleIcon (icon, orientation = 'right') {
+    if(!icon) return;
+    return <span className={`n-entry-icon ${icon} ${orientation}`} />;
+  }
+
   renderInput () {
     const {
       children,
       placeholder,
       label,
       width,
-
+      iconRight,
+      iconLeft,
       ...othersProps
     } = this.props;
 
-    const classList = css ('n-entry-text');
+    const classInput = css ('n-entry');
 
     return (
-      <input
-        className={classList}
-        placeholder={placeholder}
-        id={this.state.id}
-        {...othersProps}
-      />
+      <span>
+        <input
+          className={classInput}
+          placeholder={placeholder}
+          id={this.state.id}
+          {...othersProps}
+        />
+          {this.handleIcon (iconLeft, 'left')}
+          {this.handleIcon (iconRight, 'right')}
+      </span>
     );
   }
+
   render () {
     const classRoot = css ('n-entry-root');
+
+    const classContainer = css ('n-entry-container', {
+      'n-input-icon-left': this.props.iconLeft,
+      'n-input-icon-right': this.props.iconRight,
+    });
+
     const {label, width} = this.props;
 
     if ('label' in this.props) {
       return (
-        <div style={{width, boxSizing: 'border-box'}} className={classRoot}>
+        <div className={classRoot} style={{width}}>
           <Label htmlFor={this.state.id}>
             {label}
           </Label>
-          {this.renderInput ()}
+          <div className={classContainer}>
+            {this.renderInput ()}
+          </div>
         </div>
       );
     } else {
@@ -56,10 +75,7 @@ export default class Text extends React.PureComponent {
 
 Text.propTypes = {
   /** Rótulo do input. */
-  label: PropTypes.PropTypes.oneOfType ([
-    PropTypes.string,
-    PropTypes.bool
-  ]),
+  label: PropTypes.PropTypes.oneOfType ([PropTypes.string, PropTypes.bool]),
   /** Placeholder do input. */
   placeholder: PropTypes.string,
 
