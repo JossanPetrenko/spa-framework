@@ -9,5 +9,24 @@ it ('deve renderizar a label com texto ', () => {
   expect (wrapper).to.matchSnapshot ();
 });
 
+it ('deve renderizar a label sem texto ', () => {
+  const wrapper = shallow (<Label></Label>);
+  expect (wrapper).to.matchSnapshot ();
+});
+
+it ('deve renderizar a label com texto e htmlFor  ', () => {
+  const wrapper = shallow (<Label htmlFor="rotulo">{t ('common.titulo')}</Label>);
+  expect (wrapper).to.matchSnapshot ();
+});
+
+it ('deve renderizar a label sem texto e htmlFor  ', () => {
+  const wrapper = shallow (<Label htmlFor="rotulo"></Label>);
+  expect (wrapper).to.matchSnapshot ();
+});
+
+
+
+
+
 
 
