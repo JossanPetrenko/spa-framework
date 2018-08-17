@@ -11,7 +11,7 @@ export default class Text extends React.PureComponent {
   }
 
   handleIcon (icon, orientation = 'right') {
-    if(!icon) return;
+    if (!icon) return;
     return <span className={`n-entry-icon ${icon} ${orientation}`} />;
   }
 
@@ -36,8 +36,8 @@ export default class Text extends React.PureComponent {
           id={this.state.id}
           {...othersProps}
         />
-          {this.handleIcon (iconLeft, 'left')}
-          {this.handleIcon (iconRight, 'right')}
+        {this.handleIcon (iconLeft, 'left')}
+        {this.handleIcon (iconRight, 'right')}
       </span>
     );
   }
@@ -84,6 +84,12 @@ Text.propTypes = {
 
   /** Tamanho horizontal do input. */
   width: PropTypes.string,
+
+  /** Ícone no entry a esquerda. */
+  iconLeft: PropTypes.string,
+
+  /** Ícone no entry a direita. */
+  iconRight: PropTypes.string,
 };
 
 Text.defaultProps = {
