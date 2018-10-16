@@ -8,8 +8,6 @@
 	},
 	"author": "",
 	"license": "ISC",
-	"dependencies": {
-	},
 	"peerDependencies": {
 		"react": "^16.0.0"
 	}

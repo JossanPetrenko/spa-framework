@@ -9,8 +9,8 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@nimbus/styles": "^0.1.1",
-		"@nimbus/core": "^0.1.1"
+		"@nimbus/core": "^0.1.1",
+		"@nimbus/styles": "^0.1.2"
 	},
 	"peerDependencies": {
 		"react": "^16.0.0"
