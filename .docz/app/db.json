@@ -15,13 +15,13 @@
   "entries": {
     "packages/@nimbus/button/button.mdx": {
       "name": "nimbus/button",
+      "menu": "Components",
       "id": "6f2239e3c6c70200bb02732d77430039",
       "filepath": "packages/@nimbus/button/button.mdx",
       "link": null,
       "slug": "packages-nimbus-button-button",
       "route": "/packages-nimbus-button-button",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -87,13 +87,13 @@
     },
     "packages/@nimbus/entry/entry.mdx": {
       "name": "nimbus/entry",
+      "menu": "Components",
       "id": "876a39f3bf5d2b6988e27feef58209df",
       "filepath": "packages/@nimbus/entry/entry.mdx",
       "link": null,
       "slug": "packages-nimbus-entry-entry",
       "route": "/packages-nimbus-entry-entry",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -134,13 +134,13 @@
     },
     "packages/@nimbus/entry/label.mdx": {
       "name": "nimbus/label",
+      "menu": "Components",
       "id": "35b18823f39ebeb545340fb9da304f91",
       "filepath": "packages/@nimbus/entry/label.mdx",
       "link": null,
       "slug": "packages-nimbus-entry-label",
       "route": "/packages-nimbus-entry-label",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
@@ -161,24 +161,60 @@
     },
     "packages/@nimbus/i18n/i18n.mdx": {
       "name": "nimbus/i18n",
+      "menu": "Framework",
       "id": "57c1624df491bb28d8c6b12b20cd6bd3",
       "filepath": "packages/@nimbus/i18n/i18n.mdx",
       "link": null,
       "slug": "packages-nimbus-i18n-i18n",
       "route": "/packages-nimbus-i18n-i18n",
       "order": 0,
-      "menu": null,
-      "headings": []
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "internationalization",
+          "value": ""
+        },
+        {
+          "depth": 2,
+          "slug": "uso-básico",
+          "value": "Uso Básico"
+        },
+        {
+          "depth": 2,
+          "slug": "váriaveis",
+          "value": "Váriaveis"
+        },
+        {
+          "depth": 2,
+          "slug": "parametros",
+          "value": "Parametros"
+        },
+        {
+          "depth": 2,
+          "slug": "contagem-inteligente",
+          "value": "Contagem Inteligente"
+        },
+        {
+          "depth": 2,
+          "slug": "mudança-de-linguagem",
+          "value": "Mudança de linguagem"
+        },
+        {
+          "depth": 2,
+          "slug": "exemplo-no-react",
+          "value": "Exemplo no React"
+        }
+      ]
     },
     "packages/@nimbus/styles/readme.mdx": {
       "name": "nimbus/styles",
+      "menu": "Framework",
       "id": "6293ed660430b98f5c0ad37f63823705",
       "filepath": "packages/@nimbus/styles/readme.mdx",
       "link": null,
       "slug": "packages-nimbus-styles-readme",
       "route": "/packages-nimbus-styles-readme",
       "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 2,
