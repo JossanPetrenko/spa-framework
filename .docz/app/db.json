@@ -11,7 +11,8 @@
       {},
       {}
     ],
-    "indexHtml": ".docz/index_template.html"
+    "indexHtml": ".docz/index_template.html",
+    "base": "/spa-framework/"
   },
   "entries": {
     "packages/@nimbus/button/button.mdx": {
