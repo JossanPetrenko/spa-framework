@@ -3,6 +3,7 @@
     "title": "Nimbus",
     "description": "Nimbus - SPA Framework",
     "themeConfig": {},
+    "menu": [],
     "ordering": "descending",
     "repository": null,
     "native": false,
@@ -26,7 +27,7 @@
         {
           "depth": 1,
           "slug": "button",
-          "value": ""
+          "value": "Button"
         },
         {
           "depth": 2,
@@ -98,7 +99,7 @@
         {
           "depth": 1,
           "slug": "entry",
-          "value": ""
+          "value": "Entry"
         },
         {
           "depth": 2,
@@ -145,7 +146,7 @@
         {
           "depth": 1,
           "slug": "entry-label",
-          "value": ""
+          "value": "Entry Label"
         },
         {
           "depth": 2,
@@ -172,7 +173,7 @@
         {
           "depth": 1,
           "slug": "internationalization",
-          "value": ""
+          "value": "Internationalization"
         },
         {
           "depth": 2,
@@ -219,7 +220,7 @@
         {
           "depth": 2,
           "slug": "nimbusstyles",
-          "value": "@nimbus"
+          "value": "@nimbus /styles"
         }
       ]
     }
