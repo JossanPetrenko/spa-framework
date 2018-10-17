@@ -161,7 +161,7 @@
     },
     "packages/@nimbus/i18n/i18n.mdx": {
       "name": "nimbus/i18n",
-      "menu": "Framework",
+      "menu": "Api",
       "id": "57c1624df491bb28d8c6b12b20cd6bd3",
       "filepath": "packages/@nimbus/i18n/i18n.mdx",
       "link": null,
@@ -208,7 +208,7 @@
     },
     "packages/@nimbus/styles/readme.mdx": {
       "name": "nimbus/styles",
-      "menu": "Framework",
+      "menu": "Api",
       "id": "6293ed660430b98f5c0ad37f63823705",
       "filepath": "packages/@nimbus/styles/readme.mdx",
       "link": null,
