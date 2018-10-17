@@ -30,13 +30,18 @@
 		"pub": "lerna publish --registry=http://192.168.10.11:5555"
 	},
 	"dependencies": {
+		"docz-plugin-github-page": "^1.0.4",
 		"node-polyglot": "^2.3.0",
 		"prop-types": "^15.6.2",
 		"react-grid-system": "^4.1.4",
 		"uuid": "^3.3.2"
 	},
 	"jest": {
-		"setupFiles": [ "./test/jest-setup.js" ],
-		"snapshotSerializers": [ "<rootDir>/node_modules/enzyme-to-json/serializer" ]
+		"setupFiles": [
+			"./test/jest-setup.js"
+		],
+		"snapshotSerializers": [
+			"<rootDir>/node_modules/enzyme-to-json/serializer"
+		]
 	}
 }

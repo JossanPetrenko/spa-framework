@@ -7,8 +7,4 @@ export const imports = {
     import(/* webpackPrefetch: true, webpackChunkName: "packages-nimbus-entry-label" */ 'packages/@nimbus/entry/label.mdx'),
   'packages/@nimbus/styles/readme.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "packages-nimbus-styles-readme" */ 'packages/@nimbus/styles/readme.mdx'),
-  'packages/@nimbus/button/node_modules/@nimbus/styles/readme.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "packages-nimbus-button-node-modules-nimbus-styles-readme" */ 'packages/@nimbus/button/node_modules/@nimbus/styles/readme.mdx'),
-  'packages/@nimbus/entry/node_modules/@nimbus/styles/readme.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "packages-nimbus-entry-node-modules-nimbus-styles-readme" */ 'packages/@nimbus/entry/node_modules/@nimbus/styles/readme.mdx'),
 }

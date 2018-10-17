@@ -1,0 +1,181 @@
+{
+  "config": {
+    "title": "Nimbus",
+    "description": "Nimbus - SPA Framework",
+    "themeConfig": {},
+    "menu": [],
+    "ordering": "descending",
+    "repository": null,
+    "native": false,
+    "plugins": [
+      {},
+      {}
+    ],
+    "indexHtml": ".docz/index_template.html"
+  },
+  "entries": {
+    "packages/@nimbus/button/button.mdx": {
+      "name": "nimbus/button",
+      "id": "6f2239e3c6c70200bb02732d77430039",
+      "filepath": "packages/@nimbus/button/button.mdx",
+      "link": null,
+      "slug": "packages-nimbus-button-button",
+      "route": "/packages-nimbus-button-button",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "button",
+          "value": "Button"
+        },
+        {
+          "depth": 2,
+          "slug": "padrão",
+          "value": "Padrão"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos",
+          "value": "Exemplos"
+        },
+        {
+          "depth": 2,
+          "slug": "enfatizado",
+          "value": "Enfatizado"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos-1",
+          "value": "Exemplos"
+        },
+        {
+          "depth": 2,
+          "slug": "intenções",
+          "value": "Intenções"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos-2",
+          "value": "Exemplos"
+        },
+        {
+          "depth": 2,
+          "slug": "variações",
+          "value": "Variações"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos---outlined",
+          "value": "Exemplos - Outlined"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos---flat",
+          "value": "Exemplos - Flat"
+        },
+        {
+          "depth": 2,
+          "slug": "Ícone",
+          "value": "Ícone"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos-font-awesome-icons--material-desing-icons",
+          "value": "Exemplos (Font Awesome Icons / Material Desing Icons)"
+        }
+      ]
+    },
+    "packages/@nimbus/entry/entry.mdx": {
+      "name": "nimbus/entry",
+      "id": "876a39f3bf5d2b6988e27feef58209df",
+      "filepath": "packages/@nimbus/entry/entry.mdx",
+      "link": null,
+      "slug": "packages-nimbus-entry-entry",
+      "route": "/packages-nimbus-entry-entry",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "entry",
+          "value": "Entry"
+        },
+        {
+          "depth": 2,
+          "slug": "text-entry",
+          "value": "Text Entry"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplo-simples",
+          "value": "Exemplo Simples"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos-label",
+          "value": "Exemplos Label"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos-disabled",
+          "value": "Exemplos Disabled"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos-width",
+          "value": "Exemplos Width"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos-icon",
+          "value": "Exemplos Icon"
+        }
+      ]
+    },
+    "packages/@nimbus/entry/label.mdx": {
+      "name": "nimbus/label",
+      "id": "35b18823f39ebeb545340fb9da304f91",
+      "filepath": "packages/@nimbus/entry/label.mdx",
+      "link": null,
+      "slug": "packages-nimbus-entry-label",
+      "route": "/packages-nimbus-entry-label",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "entry-label",
+          "value": "Entry Label"
+        },
+        {
+          "depth": 2,
+          "slug": "label",
+          "value": "Label"
+        },
+        {
+          "depth": 3,
+          "slug": "exemplos",
+          "value": "Exemplos"
+        }
+      ]
+    },
+    "packages/@nimbus/styles/readme.mdx": {
+      "name": "nimbus/styles",
+      "id": "6293ed660430b98f5c0ad37f63823705",
+      "filepath": "packages/@nimbus/styles/readme.mdx",
+      "link": null,
+      "slug": "packages-nimbus-styles-readme",
+      "route": "/packages-nimbus-styles-readme",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 2,
+          "slug": "nimbusstyles",
+          "value": "@nimbus /styles"
+        }
+      ]
+    }
+  }
+}
