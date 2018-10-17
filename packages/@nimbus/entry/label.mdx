@@ -3,7 +3,7 @@ name: nimbus/label
 ---
 
 import '../styles/scss/theme.scss';
-import { t } from '../strings/index.js';
+import t from '../i18n';
 
 # **Entry Label**
 
@@ -17,7 +17,7 @@ import { Label } from './index';
 ### Exemplos
 
 <Playground>
-    <Label>{t ('common.label')}</Label>
+    <Label>{t`common.label`}</Label>
 
-    <Label htmlFor='rotulo'>{t ('common.label')} </Label>
+    <Label htmlFor='rotulo'>{t`common.label`} </Label>
 </Playground>

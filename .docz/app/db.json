@@ -3,15 +3,12 @@
     "title": "Nimbus",
     "description": "Nimbus - SPA Framework",
     "themeConfig": {},
-    "menu": [],
     "ordering": "descending",
     "repository": null,
     "native": false,
     "plugins": [
-      {},
       {}
-    ],
-    "indexHtml": ".docz/index_template.html"
+    ]
   },
   "entries": {
     "packages/@nimbus/button/button.mdx": {
@@ -27,7 +24,7 @@
         {
           "depth": 1,
           "slug": "button",
-          "value": "Button"
+          "value": ""
         },
         {
           "depth": 2,
@@ -99,7 +96,7 @@
         {
           "depth": 1,
           "slug": "entry",
-          "value": "Entry"
+          "value": ""
         },
         {
           "depth": 2,
@@ -146,7 +143,7 @@
         {
           "depth": 1,
           "slug": "entry-label",
-          "value": "Entry Label"
+          "value": ""
         },
         {
           "depth": 2,
@@ -159,6 +156,17 @@
           "value": "Exemplos"
         }
       ]
+    },
+    "packages/@nimbus/i18n/i18n.mdx": {
+      "name": "nimbus/i18n",
+      "id": "57c1624df491bb28d8c6b12b20cd6bd3",
+      "filepath": "packages/@nimbus/i18n/i18n.mdx",
+      "link": null,
+      "slug": "packages-nimbus-i18n-i18n",
+      "route": "/packages-nimbus-i18n-i18n",
+      "order": 0,
+      "menu": null,
+      "headings": []
     },
     "packages/@nimbus/styles/readme.mdx": {
       "name": "nimbus/styles",
@@ -173,7 +181,7 @@
         {
           "depth": 2,
           "slug": "nimbusstyles",
-          "value": "@nimbus /styles"
+          "value": "@nimbus"
         }
       ]
     }
