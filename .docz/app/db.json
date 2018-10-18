@@ -15,14 +15,31 @@
     "base": "/spa-framework/"
   },
   "entries": {
-    "packages/@nimbus/button/button.mdx": {
+    "packages/@nimbus/styles/readme.mdx": {
+      "name": "nimbus/styles",
+      "menu": "Api",
+      "id": "6293ed660430b98f5c0ad37f63823705",
+      "filepath": "packages/@nimbus/styles/readme.mdx",
+      "link": null,
+      "slug": "packages-nimbus-styles-readme",
+      "route": "/packages-nimbus-styles-readme",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 2,
+          "slug": "nimbusstyles",
+          "value": "@nimbus /styles"
+        }
+      ]
+    },
+    "packages/@nimbus/button/docs/button.mdx": {
       "name": "nimbus/button",
       "menu": "Components",
-      "id": "6f2239e3c6c70200bb02732d77430039",
-      "filepath": "packages/@nimbus/button/button.mdx",
+      "id": "94c0711901e304469ede6258c2b3c0f8",
+      "filepath": "packages/@nimbus/button/docs/button.mdx",
       "link": null,
-      "slug": "packages-nimbus-button-button",
-      "route": "/packages-nimbus-button-button",
+      "slug": "packages-nimbus-button-docs-button",
+      "route": "/packages-nimbus-button-docs-button",
       "order": 0,
       "headings": [
         {
@@ -87,14 +104,14 @@
         }
       ]
     },
-    "packages/@nimbus/entry/entry.mdx": {
+    "packages/@nimbus/entry/docs/entry.mdx": {
       "name": "nimbus/entry",
       "menu": "Components",
-      "id": "876a39f3bf5d2b6988e27feef58209df",
-      "filepath": "packages/@nimbus/entry/entry.mdx",
+      "id": "8c029e5f77ac97be9736b7b1e39ccc8b",
+      "filepath": "packages/@nimbus/entry/docs/entry.mdx",
       "link": null,
-      "slug": "packages-nimbus-entry-entry",
-      "route": "/packages-nimbus-entry-entry",
+      "slug": "packages-nimbus-entry-docs-entry",
+      "route": "/packages-nimbus-entry-docs-entry",
       "order": 0,
       "headings": [
         {
@@ -134,14 +151,14 @@
         }
       ]
     },
-    "packages/@nimbus/entry/label.mdx": {
+    "packages/@nimbus/entry/docs/label.mdx": {
       "name": "nimbus/label",
       "menu": "Components",
-      "id": "35b18823f39ebeb545340fb9da304f91",
-      "filepath": "packages/@nimbus/entry/label.mdx",
+      "id": "27d971dbc0734c71e55bad54fb466f07",
+      "filepath": "packages/@nimbus/entry/docs/label.mdx",
       "link": null,
-      "slug": "packages-nimbus-entry-label",
-      "route": "/packages-nimbus-entry-label",
+      "slug": "packages-nimbus-entry-docs-label",
+      "route": "/packages-nimbus-entry-docs-label",
       "order": 0,
       "headings": [
         {
@@ -161,14 +178,14 @@
         }
       ]
     },
-    "packages/@nimbus/i18n/i18n.mdx": {
+    "packages/@nimbus/i18n/docs/i18n.mdx": {
       "name": "nimbus/i18n",
       "menu": "Api",
-      "id": "57c1624df491bb28d8c6b12b20cd6bd3",
-      "filepath": "packages/@nimbus/i18n/i18n.mdx",
+      "id": "b659672b6ce7352e96793a2eee0efabf",
+      "filepath": "packages/@nimbus/i18n/docs/i18n.mdx",
       "link": null,
-      "slug": "packages-nimbus-i18n-i18n",
-      "route": "/packages-nimbus-i18n-i18n",
+      "slug": "packages-nimbus-i18n-docs-i18n",
+      "route": "/packages-nimbus-i18n-docs-i18n",
       "order": 0,
       "headings": [
         {
@@ -205,23 +222,6 @@
           "depth": 2,
           "slug": "exemplo-no-react",
           "value": "Exemplo no React"
-        }
-      ]
-    },
-    "packages/@nimbus/styles/readme.mdx": {
-      "name": "nimbus/styles",
-      "menu": "Api",
-      "id": "6293ed660430b98f5c0ad37f63823705",
-      "filepath": "packages/@nimbus/styles/readme.mdx",
-      "link": null,
-      "slug": "packages-nimbus-styles-readme",
-      "route": "/packages-nimbus-styles-readme",
-      "order": 0,
-      "headings": [
-        {
-          "depth": 2,
-          "slug": "nimbusstyles",
-          "value": "@nimbus /styles"
         }
       ]
     }

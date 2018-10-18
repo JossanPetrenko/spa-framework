@@ -1,12 +1,12 @@
 {
-  "vendors.css": "/spa-framework/static/css/vendors.d4f207b06ca0dd84bc6a.css",
-  "vendors.js": "/spa-framework/static/js/vendors.cd225837.js",
-  "app.js": "/spa-framework/static/js/app.686a1564.js",
-  "packages-nimbus-button-button.js": "/spa-framework/static/js/packages-nimbus-button-button.4c8638b1.js",
-  "packages-nimbus-entry-entry.js": "/spa-framework/static/js/packages-nimbus-entry-entry.58064f4e.js",
-  "packages-nimbus-entry-label.js": "/spa-framework/static/js/packages-nimbus-entry-label.260337d7.js",
-  "packages-nimbus-i18n-i18n.js": "/spa-framework/static/js/packages-nimbus-i18n-i18n.dae68ab1.js",
-  "packages-nimbus-styles-readme.js": "/spa-framework/static/js/packages-nimbus-styles-readme.e9f72866.js",
-  "runtime~app.js": "/spa-framework/static/js/runtime~app.d4f207b06ca0dd84bc6a.js",
+  "vendors.css": "/spa-framework/static/css/vendors.6fa8634d5ba47da3e401.css",
+  "vendors.js": "/spa-framework/static/js/vendors.fd06da0c.js",
+  "app.js": "/spa-framework/static/js/app.d5bebbb1.js",
+  "packages-nimbus-styles-readme.js": "/spa-framework/static/js/packages-nimbus-styles-readme.38f18323.js",
+  "packages-nimbus-button-docs-button.js": "/spa-framework/static/js/packages-nimbus-button-docs-button.c0f833ed.js",
+  "packages-nimbus-entry-docs-entry.js": "/spa-framework/static/js/packages-nimbus-entry-docs-entry.005e88c9.js",
+  "packages-nimbus-entry-docs-label.js": "/spa-framework/static/js/packages-nimbus-entry-docs-label.2b6d78e0.js",
+  "packages-nimbus-i18n-docs-i18n.js": "/spa-framework/static/js/packages-nimbus-i18n-docs-i18n.64241a0a.js",
+  "runtime~app.js": "/spa-framework/static/js/runtime~app.6fa8634d5ba47da3e401.js",
   "index.html": "/spa-framework/index.html"
 }
