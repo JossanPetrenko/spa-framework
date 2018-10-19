@@ -22,7 +22,7 @@
 		"sinon": "^6.1.4"
 	},
 	"scripts": {
-		"build": "rm -rf docs && docz build && cp .docz/404.html docs/",
+		"build": "rm -rf docs && docz build && cp .docz/404.html docs/ && cp .docz/redirect.js docs/",
 		"docz:dev": "docz dev",
 		"test": "jest",
 		"bootstrap": "npm i -g verdaccio",
@@ -45,11 +45,7 @@
 	},
 	"homepage": "https://jossanpetrenko.github.io/spa-framework/",
 	"jest": {
-		"setupFiles": [
-			"./test/jest-setup.js"
-		],
-		"snapshotSerializers": [
-			"<rootDir>/node_modules/enzyme-to-json/serializer"
-		]
+		"setupFiles": [ "./test/jest-setup.js" ],
+		"snapshotSerializers": [ "<rootDir>/node_modules/enzyme-to-json/serializer" ]
 	}
 }
