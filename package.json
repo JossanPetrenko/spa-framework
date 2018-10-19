@@ -22,7 +22,7 @@
 		"sinon": "^6.1.4"
 	},
 	"scripts": {
-		"docz:build": "docz build",
+		"build": "rm -rf docs && docz build && cp .docz/404.html docs/",
 		"docz:dev": "docz dev",
 		"test": "jest",
 		"bootstrap": "npm i -g verdaccio",
