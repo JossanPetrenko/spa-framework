@@ -1,6 +1,6 @@
 {
 	"name": "@nimbus/i18n",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Pacote de i18n para o projeto nimbus",
 	"author": "castrolol <lu4n.k4str0@gmail.com>",
 	"homepage": "https://github.com/JossanPetrenko/spa-framework#readme",
