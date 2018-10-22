@@ -47,11 +47,15 @@ function (_React$PureComponent) {
 
   _createClass(Text, [{
     key: "handleIcon",
-    value: function handleIcon(icon) {
-      var orientation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'right';
+    value: function handleIcon(icon, onClick) {
+      var orientation = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'right';
       if (!icon) return;
+      var classIcon = css('n-entry-icon', orientation, {
+        'n-entry-icon-clicable': onClick
+      }, icon);
       return React.createElement("span", {
-        className: "n-entry-icon ".concat(icon, " ").concat(orientation)
+        onClick: onClick,
+        className: classIcon
       });
     }
   }, {
@@ -64,14 +68,17 @@ function (_React$PureComponent) {
           width = _this$props.width,
           iconRight = _this$props.iconRight,
           iconLeft = _this$props.iconLeft,
-          othersProps = _objectWithoutProperties(_this$props, ["children", "placeholder", "label", "width", "iconRight", "iconLeft"]);
+          className = _this$props.className,
+          onIconRightClick = _this$props.onIconRightClick,
+          onIconLeftClick = _this$props.onIconLeftClick,
+          othersProps = _objectWithoutProperties(_this$props, ["children", "placeholder", "label", "width", "iconRight", "iconLeft", "className", "onIconRightClick", "onIconLeftClick"]);
 
-      var classInput = css('n-entry');
+      var classInput = css('n-entry', className);
       return React.createElement("span", null, React.createElement("input", _extends({
         className: classInput,
         placeholder: placeholder,
         id: this.state.id
-      }, othersProps)), this.handleIcon(iconLeft, 'left'), this.handleIcon(iconRight, 'right'));
+      }, othersProps)), this.handleIcon(iconLeft, onIconLeftClick, 'left'), this.handleIcon(iconRight, onIconRightClick, 'right'));
     }
   }, {
     key: "render",

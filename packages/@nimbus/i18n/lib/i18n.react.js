@@ -11,3 +11,5 @@ function I18n(props) {
 
   return i18n(key.trim(), params || vars);
 }
+
+export default I18n;
