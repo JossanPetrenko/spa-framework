@@ -1,6 +1,6 @@
 {
 	"name": "@nimbus/entry",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "",
 	"main": "lib/index.js",
 	"scripts": {
@@ -10,7 +10,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"@nimbus/core": "^0.1.4",
-		"@nimbus/styles": "^0.1.5"
+		"@nimbus/styles": "^0.1.6"
 	},
 	"peerDependencies": {
 		"react": "^16.0.0"
