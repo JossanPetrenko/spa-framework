@@ -9,4 +9,6 @@ export const imports = {
     import(/* webpackPrefetch: true, webpackChunkName: "packages-nimbus-entry-docs-label" */ 'packages/@nimbus/entry/docs/label.mdx'),
   'packages/@nimbus/i18n/docs/i18n.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "packages-nimbus-i18n-docs-i18n" */ 'packages/@nimbus/i18n/docs/i18n.mdx'),
+  'packages/@nimbus/layout/docs/sidemenu.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "packages-nimbus-layout-docs-sidemenu" */ 'packages/@nimbus/layout/docs/sidemenu.mdx'),
 }

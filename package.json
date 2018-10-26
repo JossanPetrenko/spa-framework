@@ -24,6 +24,7 @@
 	"scripts": {
 		"build": "rm -rf docs && docz build && cp .docz/404.html docs/ && cp .docz/redirect.js docs/",
 		"docz:dev": "docz dev",
+		"start": "docz dev",
 		"test": "jest",
 		"bootstrap": "npm i -g verdaccio",
 		"test:coverage": "jest --coverage",
@@ -38,6 +39,7 @@
 		"node-polyglot": "^2.3.0",
 		"prop-types": "^15.6.2",
 		"react-grid-system": "^4.1.4",
+		"styled-components": "^4.0.2",
 		"uuid": "^3.3.2",
 		"webpack": "^4.21.0",
 		"webpack-cli": "^3.1.2",
@@ -45,7 +47,11 @@
 	},
 	"homepage": "https://jossanpetrenko.github.io/spa-framework/",
 	"jest": {
-		"setupFiles": [ "./test/jest-setup.js" ],
-		"snapshotSerializers": [ "<rootDir>/node_modules/enzyme-to-json/serializer" ]
+		"setupFiles": [
+			"./test/jest-setup.js"
+		],
+		"snapshotSerializers": [
+			"<rootDir>/node_modules/enzyme-to-json/serializer"
+		]
 	}
 }

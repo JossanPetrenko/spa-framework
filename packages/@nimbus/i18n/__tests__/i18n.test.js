@@ -24,10 +24,6 @@ describe('@nimbus/i18n', () => {
 			HELLO_WORLD: 'Olá Mundo!'
 		});
 
-		i18n.register('en-US', {
-			HELLO_WORLD: 'Hello World!'
-		});
-
 		i18n.register('emoji', {
 			HELLO_WORLD: '✋ 🌎!'
 		});

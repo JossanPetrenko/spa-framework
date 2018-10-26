@@ -224,6 +224,23 @@
           "value": "Exemplo no React"
         }
       ]
+    },
+    "packages/@nimbus/layout/docs/sidemenu.mdx": {
+      "name": "nimbus/layout",
+      "menu": "Components",
+      "id": "ffb421ca5e14eeadc70208b9bafbc3bb",
+      "filepath": "packages/@nimbus/layout/docs/sidemenu.mdx",
+      "link": null,
+      "slug": "packages-nimbus-layout-docs-sidemenu",
+      "route": "/packages-nimbus-layout-docs-sidemenu",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "layout",
+          "value": "Layout"
+        }
+      ]
     }
   }
 }
